@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JOPÓI">
+  <title>JOPÓI: manos abiertas que intercambian</title>
+  <rect width="64" height="64" fill="#004d00"/>
+  <!-- Dos manos estilizadas en intercambio recíproco (jopói) -->
+  <path fill="#ffffff" d="M14 40c0-2 1.5-3.5 3.5-3.5H26l-6-6c-1.4-1.4-1.4-3.6 0-5s3.6-1.4 5 0l11 11v14H22c-4.4 0-8-3.6-8-8v-2.5z"/>
+  <path fill="#ffffff" d="M50 24c0 2-1.5 3.5-3.5 3.5H38l6 6c1.4 1.4 1.4 3.6 0 5s-3.6 1.4-5 0L28 27.5v-14h14c4.4 0 8 3.6 8 8V24z" opacity="0.92"/>
+  <!-- Celda braille de la letra J (puntos 2, 4, 5) -->
+  <g fill="#ffffff">
+    <circle cx="49" cy="45" r="2.4" opacity="0.35"/>
+    <circle cx="49" cy="52" r="2.4"/>
+    <circle cx="56" cy="45" r="2.4"/>
+    <circle cx="56" cy="52" r="2.4"/>
+    <circle cx="49" cy="59" r="2.4" opacity="0.35"/>
+    <circle cx="56" cy="59" r="2.4" opacity="0.35"/>
+  </g>
+</svg>

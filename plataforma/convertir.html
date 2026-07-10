@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Convertir a braille | JOPÓI</title>
+  <meta name="description" content="Convierta cualquier texto o documento en español a braille boliviano: descargue el archivo BRF para impresora braille o la guía para transcribir a mano con regleta y punzón.">
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html">JOPÓI</a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Convertir cualquier texto a braille</h1>
+    <p>Suba una ley, un reglamento, una cartilla o cualquier documento en español, o simplemente escriba o dicte el texto. La plataforma lo convierte a <strong>braille español grado 1, la signografía que se enseña en Bolivia</strong>, y le da dos caminos para llevarlo al papel:</p>
+    <ul>
+      <li><strong>Con impresora braille:</strong> descargue el archivo punto BRF y llévelo a cualquier centro que tenga una impresora braille (embosser).</li>
+      <li><strong>Sin impresora, con regleta y punzón:</strong> descargue la guía de transcripción. Cada celda ya viene invertida en espejo y en orden de marcado, así que cualquier persona voluntaria puede transcribirla a mano, punto por punto, sin saber braille. Una regleta cuesta entre 10 y 20 dólares.</li>
+    </ul>
+    <p class="aviso-caja">Los documentos se procesan dentro de su dispositivo. Nada se envía a ningún servidor.</p>
+
+    <h2>Paso 1. Traiga el texto</h2>
+    <div class="zona-carga">
+      <label for="archivo-convertir">Subir un archivo (PDF, imagen o texto)</label>
+      <p class="ayuda-campo">Si el PDF es un escaneo, la plataforma lo leerá con reconocimiento óptico. La primera vez necesita internet para descargar la herramienta.</p>
+      <input type="file" id="archivo-convertir" accept=".pdf,.txt,.md,image/*">
+    </div>
+    <progress id="progreso-convertir" max="1" value="0" hidden aria-label="Avance de la lectura del archivo"></progress>
+
+    <label for="titulo-braille">Título del documento</label>
+    <input type="text" id="titulo-braille" autocomplete="off">
+
+    <label for="texto-convertir">Texto a convertir (puede escribirlo, dictarlo o corregir lo extraído del archivo)</label>
+    <textarea id="texto-convertir" rows="10"></textarea>
+
+    <h2>Paso 2. Elija el formato de línea</h2>
+    <label for="celdas-linea">Celdas por línea</label>
+    <p class="ayuda-campo">28 celdas es la regleta de bolsillo más común en Bolivia. 40 celdas es la página completa de impresora braille.</p>
+    <select id="celdas-linea">
+      <option value="28" selected>28 celdas (regleta estándar)</option>
+      <option value="40">40 celdas (página de impresora braille)</option>
+    </select>
+
+    <h2>Paso 3. Convierta y descargue</h2>
+    <div class="acciones-documento" role="group" aria-label="Acciones de conversión">
+      <button type="button" id="btn-convertir">Convertir a braille</button>
+      <button type="button" id="btn-escuchar-original" class="secundario">Escuchar el texto antes de convertir</button>
+      <button type="button" id="btn-descargar-brf">Descargar archivo punto BRF (impresora braille)</button>
+      <button type="button" id="btn-descargar-guia">Descargar guía de regleta y punzón</button>
+      <button type="button" id="btn-ver-guia" class="secundario">Ver la guía en pantalla</button>
+    </div>
+    <p id="estado-convertir" role="status" aria-live="polite"></p>
+
+    <section id="resultado-braille" hidden>
+      <h2 tabindex="-1">Vista braille (lectura)</h2>
+      <p id="resumen-braille"></p>
+      <p>Así quedará el documento al tacto, línea por línea. Antes de convertir, el texto pasó por la limpieza automática: sin abreviaturas y sin símbolos que confundan.</p>
+      <div id="vista-braille"></div>
+    </section>
+
+    <section id="guia-en-pantalla" hidden>
+      <h2 tabindex="-1">Guía de transcripción con regleta y punzón</h2>
+      <pre style="white-space: pre-wrap; overflow-x: auto;"></pre>
+    </section>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/convertir.js"></script>
+</body>
+</html>

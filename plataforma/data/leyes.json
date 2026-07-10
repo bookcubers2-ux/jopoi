@@ -1,0 +1,117 @@
+[
+  {
+    "id": "ley-223",
+    "titulo": "Ley número 223: Ley General para Personas con Discapacidad",
+    "tipo": "Ley nacional del Estado Plurinacional de Bolivia",
+    "estado": "vigente",
+    "fecha": "2012-03-02",
+    "temas": ["discapacidad", "derechos", "accesibilidad"],
+    "resumen": "Garantiza a las personas con discapacidad el ejercicio pleno de sus derechos en igualdad de condiciones: accesibilidad, educación, salud, trabajo y participación política.",
+    "texto": "Artículo 1. La presente Ley tiene por objeto garantizar a las personas con discapacidad el ejercicio pleno de sus derechos y deberes en igualdad de condiciones y equiparación de oportunidades, con trato preferente bajo un sistema de protección integral.\n\nArtículo 6. La accesibilidad es uno de los principios de esta Ley: los servicios que goza la sociedad deben ajustarse para que las personas con discapacidad puedan usarlos de manera autónoma.\n\nArtículo 24. Las personas con discapacidad tienen derecho a participar plena y efectivamente en la vida política y pública, en igualdad de condiciones con las demás personas. El Estado debe garantizar que puedan elegir y ser elegidas, y acceder a la información pública en formatos accesibles.\n\nArtículo 32. Los medios y sistemas de comunicación, públicos y privados, deben incorporar formatos accesibles como el braille, la lengua de señas, la audiodescripción y los textos de fácil comprensión.",
+    "lecturaFacil": [
+      "Esta ley protege los derechos de las personas con discapacidad en Bolivia.",
+      "Dice que las personas con discapacidad tienen los mismos derechos que todas las demás personas.",
+      "Los servicios públicos deben adaptarse para que usted pueda usarlos sin ayuda.",
+      "Usted tiene derecho a votar, a ser autoridad y a recibir la información pública en formatos que pueda entender.",
+      "La información debe existir en braille, lengua de señas, audio y textos fáciles de leer.",
+      "Si una institución no cumple, usted puede exigirlo: es su derecho, no un favor."
+    ],
+    "fuente": "Gaceta Oficial del Estado Plurinacional de Bolivia. Texto resumido para demostración: consulte la fuente oficial para el texto íntegro."
+  },
+  {
+    "id": "ley-341",
+    "titulo": "Ley número 341: Ley de Participación y Control Social",
+    "tipo": "Ley nacional del Estado Plurinacional de Bolivia",
+    "estado": "vigente",
+    "fecha": "2013-02-05",
+    "temas": ["participación", "control social", "democracia"],
+    "resumen": "Reconoce el derecho de la sociedad civil a participar en el diseño de las políticas públicas y a controlar la gestión de las instituciones del Estado.",
+    "texto": "Artículo 1. La presente Ley tiene por objeto fortalecer la democracia participativa, estableciendo el marco general de la participación y control social.\n\nArtículo 7. Son derechos de los actores de la participación y control social, entre otros: participar en la formulación de políticas, planes, programas, proyectos y presupuestos del Estado; acceder a información documentada; y presentar iniciativas legislativas u otra normativa.\n\nArtículo 8. El control social se ejerce sobre la gestión pública en todos los niveles del Estado y sobre las empresas e instituciones que administren recursos fiscales.",
+    "lecturaFacil": [
+      "Esta ley dice que usted tiene derecho a participar en las decisiones del Estado.",
+      "Usted puede opinar sobre los planes y el presupuesto de su municipio, su departamento y el país.",
+      "Usted puede pedir información a las instituciones y ellas deben entregarla.",
+      "Usted también puede presentar sus propias propuestas de ley.",
+      "Esta plataforma le ayuda a escribir y enviar esas propuestas."
+    ],
+    "fuente": "Gaceta Oficial del Estado Plurinacional de Bolivia. Texto resumido para demostración: consulte la fuente oficial para el texto íntegro."
+  },
+  {
+    "id": "ley-342",
+    "titulo": "Ley número 342: Ley de la Juventud",
+    "tipo": "Ley nacional del Estado Plurinacional de Bolivia",
+    "estado": "vigente",
+    "fecha": "2013-02-05",
+    "temas": ["juventud", "derechos", "participación"],
+    "resumen": "Garantiza los derechos de las y los jóvenes de 16 a 28 años, incluida su participación en los espacios de decisión política.",
+    "texto": "Artículo 1. La presente Ley tiene por objeto garantizar a las jóvenes y a los jóvenes el ejercicio pleno de sus derechos y deberes, el diseño del marco institucional y el establecimiento de políticas públicas.\n\nArtículo 7. Se consideran jóvenes a las personas comprendidas entre los dieciséis y los veintiocho años de edad.\n\nArtículo 11. Las jóvenes y los jóvenes tienen derecho a la participación individual y colectiva en todos los ámbitos de la vida política, social, económica y cultural del Estado, y a formar parte de instancias de deliberación y decisión.",
+    "lecturaFacil": [
+      "Esta ley protege los derechos de las personas jóvenes de Bolivia.",
+      "Joven es toda persona que tiene entre 16 y 28 años.",
+      "Las personas jóvenes tienen derecho a participar en la política.",
+      "Pueden organizarse, opinar y ser parte de las decisiones que las afectan.",
+      "Ser joven con discapacidad no quita ninguno de estos derechos: los suma."
+    ],
+    "fuente": "Gaceta Oficial del Estado Plurinacional de Bolivia. Texto resumido para demostración: consulte la fuente oficial para el texto íntegro."
+  },
+  {
+    "id": "demo-accesibilidad-digital",
+    "titulo": "Proyecto de ley departamental de accesibilidad digital en Santa Cruz",
+    "tipo": "Proyecto de ley departamental (ejemplo educativo)",
+    "estado": "proyecto",
+    "fecha": "2026-05-14",
+    "demo": true,
+    "temas": ["accesibilidad", "tecnologia", "discapacidad"],
+    "resumen": "Ejemplo de demostración: propone que todos los sitios web y documentos públicos del departamento sean accesibles para personas con discapacidad.",
+    "texto": "Artículo 1. Objeto. El presente proyecto establece la obligación de que todo sitio web, aplicación y documento digital de las entidades públicas del departamento de Santa Cruz cumpla estándares internacionales de accesibilidad.\n\nArtículo 2. Formatos accesibles. Toda ley, resolución y comunicado oficial deberá publicarse en texto digital legible por lectores de pantalla, con versión en Lectura Fácil y con posibilidad de descarga en formato braille.\n\nArtículo 3. Plazos. Las entidades tendrán un plazo de dos años para adecuar sus plataformas, priorizando la información legislativa, de salud y de trámites ciudadanos.\n\nArtículo 4. Participación. Las organizaciones de personas con discapacidad participarán en la validación de los formatos accesibles.",
+    "lecturaFacil": [
+      "Este es un proyecto de ley. Todavía no es ley.",
+      "Propone que las páginas web del gobierno departamental sean fáciles de usar para personas con discapacidad.",
+      "Las leyes y comunicados deberían publicarse en texto que el lector de pantalla pueda leer.",
+      "También deberían tener versión en Lectura Fácil y en braille.",
+      "Las organizaciones de personas con discapacidad ayudarían a revisar que todo funcione.",
+      "Usted puede opinar sobre este proyecto con el botón de propuestas."
+    ],
+    "fuente": "Documento de ejemplo creado para demostrar la plataforma. No corresponde a un expediente real."
+  },
+  {
+    "id": "demo-proteccion-bosques",
+    "titulo": "Proyecto de ley departamental de protección de bosques y control de la tala",
+    "tipo": "Proyecto de ley departamental (ejemplo educativo)",
+    "estado": "proyecto",
+    "fecha": "2026-03-20",
+    "demo": true,
+    "temas": ["bosque", "medio ambiente", "tala"],
+    "resumen": "Ejemplo de demostración: propone reglas más estrictas para la tala de árboles y la restauración de bosques afectados por incendios en el departamento.",
+    "texto": "Artículo 1. Objeto. Establecer medidas de protección de los bosques del departamento y reglas para el control de la tala.\n\nArtículo 2. Autorización. Ninguna persona ni empresa podrá talar árboles en zonas protegidas sin autorización expresa de la autoridad competente, previo estudio técnico.\n\nArtículo 3. Restauración. Quien tale con autorización deberá plantar y mantener diez árboles nuevos por cada árbol retirado.\n\nArtículo 4. Sanciones. La tala ilegal será sancionada con multas destinadas a un fondo departamental de reforestación, sin perjuicio de las acciones penales que correspondan.",
+    "lecturaFacil": [
+      "Este es un proyecto de ley. Todavía no es ley.",
+      "Quiere proteger los bosques de Santa Cruz.",
+      "Para cortar árboles en zonas protegidas se necesitaría un permiso.",
+      "Quien corte un árbol con permiso debería plantar diez árboles nuevos.",
+      "Quien corte árboles sin permiso pagaría una multa.",
+      "Ese dinero se usaría para plantar más bosques."
+    ],
+    "fuente": "Documento de ejemplo creado para demostrar la plataforma. No corresponde a un expediente real."
+  },
+  {
+    "id": "demo-transporte-accesible",
+    "titulo": "Proyecto de ley departamental de transporte público accesible",
+    "tipo": "Proyecto de ley departamental (ejemplo educativo)",
+    "estado": "proyecto",
+    "fecha": "2026-01-30",
+    "demo": true,
+    "temas": ["transporte", "accesibilidad", "ciudad"],
+    "resumen": "Ejemplo de demostración: propone que el transporte público del departamento incorpore unidades accesibles, paradas con información sonora y tarifa preferente.",
+    "texto": "Artículo 1. Objeto. Garantizar que el servicio de transporte público del departamento sea accesible para personas con discapacidad y personas adultas mayores.\n\nArtículo 2. Unidades accesibles. Toda renovación de flota deberá incluir vehículos con rampa, espacio señalizado y anuncios sonoros y visuales de las paradas.\n\nArtículo 3. Tarifa. Las personas con discapacidad accederán a una tarifa preferente del cincuenta por ciento en todo el servicio departamental.\n\nArtículo 4. Capacitación. El personal de transporte recibirá capacitación anual en trato digno y apoyo a pasajeras y pasajeros con discapacidad.",
+    "lecturaFacil": [
+      "Este es un proyecto de ley. Todavía no es ley.",
+      "Propone micros y buses con rampa para subir con silla de ruedas.",
+      "Las paradas se anunciarían con voz dentro del vehículo.",
+      "Las personas con discapacidad pagarían la mitad del pasaje.",
+      "Las y los choferes recibirían capacitación para dar buen trato.",
+      "Usted puede opinar sobre este proyecto con el botón de propuestas."
+    ],
+    "fuente": "Documento de ejemplo creado para demostrar la plataforma. No corresponde a un expediente real."
+  }
+]

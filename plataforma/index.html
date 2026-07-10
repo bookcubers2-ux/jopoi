@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOPÓI | Feed Legislativo Accesible</title>
+  <meta name="description" content="JOPÓI: plataforma cívica accesible para leer leyes y presentar propuestas al parlamento, diseñada primero para personas ciegas, neurodivergentes y con baja visión.">
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+  <a class="saltar" href="#buscador">Saltar al buscador</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html">JOPÓI</a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Leyes y proyectos de su región</h1>
+    <p>Aquí están los documentos de la <span id="nombre-parlamento">Asamblea Legislativa Departamental de Santa Cruz</span>, en texto puro y sin barreras. Cada documento se puede escuchar con voz, leer en braille, descargar para impresora braille y ver en versión simplificada.</p>
+
+    <label for="buscador">Buscar por tema o palabra</label>
+    <p class="ayuda-campo" id="ayuda-buscador">Por ejemplo: juventud, agua, educación. También puede dictar con el botón del micrófono.</p>
+    <input type="search" id="buscador" aria-describedby="ayuda-buscador" autocomplete="off">
+
+    <p id="estado-feed" role="status" aria-live="polite">Cargando documentos.</p>
+
+    <ol class="feed" id="lista-feed" aria-label="Lista de leyes y proyectos, de la más reciente a la más antigua"></ol>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto. Cualquier organización del mundo puede copiarlo y lanzar su propia democracia accesible.</p>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+    <p id="estado-conexion" role="status"></p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/feed.js"></script>
+  <script>
+    (function () {
+      var estado = document.getElementById('estado-conexion');
+      function refrescar() {
+        estado.textContent = navigator.onLine
+          ? 'Con conexión a internet.'
+          : 'Sin conexión. La plataforma sigue funcionando con los documentos guardados.';
+      }
+      window.addEventListener('online', refrescar);
+      window.addEventListener('offline', refrescar);
+      refrescar();
+      var config = window.JOPOI_CONFIG || {};
+      if (config.parlamento) document.getElementById('nombre-parlamento').textContent = config.parlamento;
+    }());
+  </script>
+</body>
+</html>

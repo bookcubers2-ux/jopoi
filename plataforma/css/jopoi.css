@@ -1,0 +1,383 @@
+/* ====================================================================
+   JOPÓI | Hoja de estilos única
+   Paleta exclusiva: verde oscuro (#004d00) y blanco (#FFFFFF).
+   Contraste del par: 10.9 a 1 (supera el nivel AAA de WCAG, 7 a 1).
+   Sin animaciones, sin carruseles, sin ventanas emergentes.
+   ==================================================================== */
+
+:root {
+  --verde: #004d00;
+  --verde-profundo: #002e00;   /* fondo del modo oscuro, misma familia */
+  --blanco: #ffffff;
+  --escala-texto: 1;
+
+  --tinta: var(--verde);
+  --papel: var(--blanco);
+
+  --espacio-lineas: 1.7;
+  --espacio-letras: 0.01em;
+  --espacio-palabras: 0.05em;
+}
+
+/* Tema oscuro: se invierte el par verde y blanco, nada más. */
+:root[data-tema="oscuro"] {
+  --tinta: var(--blanco);
+  --papel: var(--verde-profundo);
+}
+
+/* Espaciado amplio (baja visión y neurodivergencia, WCAG 1.4.12) */
+:root[data-espaciado="amplio"] {
+  --espacio-lineas: 2;
+  --espacio-letras: 0.08em;
+  --espacio-palabras: 0.16em;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Sin movimiento, siempre: la regla vale para toda la plataforma. */
+*, *::before, *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}
+
+html {
+  /* Letra grande por defecto: 20 píxeles, escalable hasta 44. */
+  font-size: calc(20px * var(--escala-texto));
+}
+
+body {
+  font-family: "Atkinson Hyperlegible", Verdana, "Segoe UI", Arial, sans-serif;
+  background: var(--papel);
+  color: var(--tinta);
+  line-height: var(--espacio-lineas);
+  letter-spacing: var(--espacio-letras);
+  word-spacing: var(--espacio-palabras);
+  min-height: 100vh;
+}
+
+/* ------------------------------------------------------------------ */
+/* Utilidades de accesibilidad                                          */
+/* ------------------------------------------------------------------ */
+
+.solo-lector {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.saltar {
+  position: absolute;
+  left: -999px;
+  background: var(--tinta);
+  color: var(--papel);
+  padding: 0.75rem 1.25rem;
+  z-index: 100;
+  font-weight: 700;
+}
+.saltar:focus { left: 0.5rem; top: 0.5rem; }
+
+/* Foco visible grueso en TODO elemento interactivo (WCAG 2.4.13). */
+a:focus-visible, button:focus-visible, input:focus-visible,
+textarea:focus-visible, select:focus-visible, [tabindex]:focus-visible {
+  outline: 4px solid var(--tinta);
+  outline-offset: 3px;
+}
+
+/* ------------------------------------------------------------------ */
+/* Estructura general                                                   */
+/* ------------------------------------------------------------------ */
+
+header.sitio {
+  background: var(--verde);
+  color: var(--blanco);
+  border-bottom: 4px solid var(--verde);
+  padding: 1rem 1.25rem;
+}
+:root[data-tema="oscuro"] header.sitio {
+  background: var(--verde-profundo);
+  border-bottom-color: var(--blanco);
+}
+
+header.sitio .marca {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: var(--blanco);
+  text-decoration: none;
+  display: inline-block;
+}
+header.sitio .lema { color: var(--blanco); font-size: 0.95rem; }
+
+nav.principal { margin-top: 0.75rem; }
+nav.principal ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+nav.principal a {
+  display: inline-block;
+  color: var(--verde);
+  background: var(--blanco);
+  border: 3px solid var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 0.6rem 1.1rem;
+  min-height: 44px;
+}
+nav.principal a[aria-current="page"] {
+  background: var(--verde);
+  color: var(--blanco);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+:root[data-tema="oscuro"] nav.principal a[aria-current="page"] { background: var(--verde-profundo); }
+
+main {
+  max-width: 46rem;   /* unos 70 caracteres: ancho de lectura cómodo */
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 4rem;
+}
+
+h1 { font-size: 1.9rem; margin: 1rem 0; line-height: 1.3; }
+h2 { font-size: 1.45rem; margin: 1.5rem 0 0.75rem; line-height: 1.35; }
+h3 { font-size: 1.15rem; margin: 1.25rem 0 0.5rem; }
+p, li { margin-bottom: 0.8rem; max-width: 70ch; }
+ul, ol { padding-left: 1.5rem; margin-bottom: 1rem; }
+
+a { color: var(--tinta); text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 2px; }
+
+hr { border: none; border-top: 3px solid var(--tinta); margin: 2rem 0; }
+
+footer.sitio {
+  border-top: 4px solid var(--tinta);
+  margin-top: 3rem;
+  padding: 1.5rem 1.25rem;
+  font-size: 0.9rem;
+}
+footer.sitio p { max-width: none; }
+
+/* ------------------------------------------------------------------ */
+/* Barra de accesibilidad                                               */
+/* ------------------------------------------------------------------ */
+
+.barra-a11y {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background: var(--papel);
+  border-bottom: 3px solid var(--tinta);
+  align-items: center;
+}
+.barra-a11y .enlace-barra { font-weight: 700; padding: 0.4rem 0.2rem; }
+
+/* ------------------------------------------------------------------ */
+/* Botones y formularios                                                */
+/* ------------------------------------------------------------------ */
+
+button, .boton {
+  font: inherit;
+  font-weight: 700;
+  color: var(--papel);
+  background: var(--tinta);
+  border: 3px solid var(--tinta);
+  padding: 0.6rem 1.2rem;
+  min-height: 48px;           /* objetivo táctil amplio (WCAG 2.5.8) */
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+button.secundario, .boton.secundario {
+  color: var(--tinta);
+  background: var(--papel);
+}
+button[aria-pressed="true"] {
+  color: var(--papel);
+  background: var(--tinta);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+button[disabled] { opacity: 0.55; cursor: not-allowed; }
+
+label { display: block; font-weight: 700; margin: 1rem 0 0.35rem; }
+.ayuda-campo { font-size: 0.92rem; margin: 0 0 0.4rem; }
+
+input[type="text"], input[type="search"], input[type="email"], textarea, select {
+  font: inherit;
+  color: var(--tinta);
+  background: var(--papel);
+  border: 3px solid var(--tinta);
+  padding: 0.65rem;
+  width: 100%;
+  min-height: 48px;
+}
+textarea { min-height: 9rem; resize: vertical; }
+
+fieldset { border: 3px solid var(--tinta); padding: 1rem 1.25rem; margin: 1.25rem 0; }
+legend { font-weight: 800; padding: 0 0.5rem; }
+
+/* Campo con botón de dictado integrado */
+.campo-con-dictado { display: flex; align-items: stretch; gap: 0.4rem; }
+.campo-con-dictado textarea, .campo-con-dictado input { flex: 1; }
+.boton-microfono {
+  min-width: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.boton-microfono.grabando {
+  background: var(--papel);
+  color: var(--tinta);
+  outline: 4px dashed var(--tinta);
+  outline-offset: -6px;
+}
+.estado-dictado { display: block; font-size: 0.92rem; min-height: 1.4em; margin: 0.3rem 0; }
+
+/* ------------------------------------------------------------------ */
+/* Feed legislativo                                                     */
+/* ------------------------------------------------------------------ */
+
+ol.feed { list-style: none; padding: 0; }
+ol.feed > li { margin-bottom: 1.25rem; }
+
+article.tarjeta-ley {
+  border: 3px solid var(--tinta);
+  padding: 1.1rem 1.25rem;
+}
+article.tarjeta-ley h3 { margin-top: 0; }
+article.tarjeta-ley h3 a { text-decoration-thickness: 3px; }
+.etiqueta-estado {
+  display: inline-block;
+  border: 2px solid var(--tinta);
+  padding: 0.15rem 0.6rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  margin-right: 0.5rem;
+}
+.etiqueta-estado.vigente { background: var(--tinta); color: var(--papel); }
+.meta-ley { font-size: 0.92rem; margin-bottom: 0.5rem; }
+
+/* ------------------------------------------------------------------ */
+/* Lector de documentos                                                 */
+/* ------------------------------------------------------------------ */
+
+.acciones-documento {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.25rem 0;
+  padding: 1rem;
+  border: 3px solid var(--tinta);
+}
+
+article.documento .bloque {
+  border-left: 6px solid var(--tinta);
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.1rem;   /* pausa visual entre bloques (neurodivergencia) */
+  max-width: 70ch;
+}
+article.documento .bloque p { margin-bottom: 0; }
+.bloque .leer-bloque {
+  min-height: 40px;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Resaltado del bloque que la voz está leyendo */
+.tts-leyendo {
+  background: var(--tinta);
+  color: var(--papel);
+}
+.tts-leyendo a, .tts-leyendo button { color: var(--papel); border-color: var(--papel); background: var(--tinta); }
+
+/* Lectura fácil */
+.panel-lectura-facil {
+  border: 4px double var(--tinta);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+.panel-lectura-facil ul.vinetas { list-style: square; }
+.panel-lectura-facil ul.vinetas li { margin-bottom: 1rem; font-size: 1.05em; }
+.aviso-origen { font-size: 0.9rem; border-top: 2px solid var(--tinta); padding-top: 0.6rem; margin-top: 1rem; }
+
+dl.glosario dt { font-weight: 800; margin-top: 0.8rem; }
+dl.glosario dd { margin-left: 1rem; }
+
+/* Pictogramas */
+.fila-pictogramas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+  padding: 0;
+}
+figure.pictograma {
+  border: 3px solid var(--tinta);
+  padding: 0.6rem;
+  text-align: center;
+  width: 7.5rem;
+}
+figure.pictograma svg { width: 4rem; height: 4rem; fill: var(--tinta); }
+figure.pictograma img { width: 4rem; height: 4rem; object-fit: contain; background: var(--blanco); }
+figure.pictograma figcaption { font-size: 0.85rem; font-weight: 700; margin-top: 0.3rem; }
+
+/* Braille en pantalla */
+.braille-muestra {
+  font-size: 1.6rem;
+  line-height: 1.9;
+  border: 3px dashed var(--tinta);
+  padding: 1rem;
+  overflow-x: auto;
+  font-family: "Segoe UI Symbol", "Apple Symbols", sans-serif;
+}
+
+/* ------------------------------------------------------------------ */
+/* OCR                                                                  */
+/* ------------------------------------------------------------------ */
+
+.zona-carga {
+  border: 4px dashed var(--tinta);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin: 1.25rem 0;
+}
+.zona-carga input[type="file"] { border: none; min-height: auto; width: auto; }
+progress { width: 100%; height: 1.5rem; accent-color: var(--verde); }
+
+.resultado-ocr {
+  border: 3px solid var(--tinta);
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+/* ------------------------------------------------------------------ */
+/* Estado y avisos                                                      */
+/* ------------------------------------------------------------------ */
+
+[role="status"], .aviso {
+  display: block;
+  margin: 0.75rem 0;
+}
+.aviso-caja {
+  border: 3px solid var(--tinta);
+  padding: 0.9rem 1.1rem;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+/* Indicador de conexión (útil en zonas de baja conectividad) */
+#estado-conexion { font-size: 0.9rem; font-weight: 700; }
+
+/* ------------------------------------------------------------------ */
+/* Impresión: tinta negra sobre blanco, sin interfaz                    */
+/* ------------------------------------------------------------------ */
+@media print {
+  .barra-a11y, nav.principal, .acciones-documento, .boton-microfono, footer.sitio { display: none !important; }
+  body { color: #000; background: #fff; }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 40rem) {
+  nav.principal ul { flex-direction: column; }
+  nav.principal a { width: 100%; }
+  .barra-a11y button { flex: 1 1 auto; }
+}

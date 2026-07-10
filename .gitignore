@@ -1,0 +1,12 @@
+# JOPÓI: lo que NUNCA se publica en el repositorio público.
+# Las fotos del proyecto y los reportes internos al financiador
+# son material privado de la organización.
+FOTOS/
+*.docx
+~$*
+
+# Basura de sistema y dependencias
+node_modules/
+Thumbs.db
+.DS_Store
+.vercel/

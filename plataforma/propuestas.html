@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Escribir mi propuesta | JOPÓI</title>
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html">JOPÓI</a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Escribir una propuesta para la institución</h1>
+    <p>La democracia no es solo leer: es proponer. Responda las preguntas con calma, una por una. Puede escribir o <strong>dictar con el micrófono</strong> de cada campo. Todo se guarda solo en su dispositivo: si se corta el internet, no pierde nada.</p>
+    <p id="contexto-propuesta" role="status"></p>
+    <p id="estado-borrador" role="status" aria-live="polite"></p>
+
+    <form onsubmit="return false">
+      <fieldset>
+        <legend>Paso 1. Quién es usted</legend>
+        <label for="campo-nombre">Su nombre completo</label>
+        <input type="text" id="campo-nombre" autocomplete="name">
+        <label for="campo-comunidad">Su barrio, comunidad o municipio</label>
+        <input type="text" id="campo-comunidad">
+      </fieldset>
+
+      <fieldset>
+        <legend>Paso 2. El problema</legend>
+        <label for="campo-problema">¿Qué problema vive usted o su comunidad?</label>
+        <p class="ayuda-campo">Cuéntelo con sus palabras. Por ejemplo: en mi barrio no hay rampas y las veredas están rotas.</p>
+        <textarea id="campo-problema" rows="5"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Paso 3. Su propuesta</legend>
+        <label for="campo-propuesta">¿Qué propone usted para resolverlo?</label>
+        <p class="ayuda-campo">No necesita lenguaje legal. La plataforma le dará el formato formal.</p>
+        <textarea id="campo-propuesta" rows="5"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Paso 4. Las personas beneficiadas</legend>
+        <label for="campo-beneficiarios">¿A quiénes ayudaría su propuesta?</label>
+        <textarea id="campo-beneficiarios" rows="3"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Paso 5. El pedido concreto</legend>
+        <label for="campo-pedido">¿Qué le pide, en concreto, a la institución?</label>
+        <p class="ayuda-campo">Por ejemplo: que se apruebe una ordenanza, que se destine presupuesto, que respondan un informe.</p>
+        <textarea id="campo-pedido" rows="4"></textarea>
+      </fieldset>
+
+      <button type="button" id="btn-generar">Generar mi documento formal</button>
+      <button type="button" id="btn-limpiar" class="secundario">Borrar todo y empezar de nuevo</button>
+    </form>
+
+    <p id="estado-propuesta" role="status" aria-live="polite"></p>
+
+    <section id="documento-final" hidden>
+      <h2 tabindex="-1">Su propuesta formal, lista para enviar</h2>
+      <label for="texto-final">Documento generado, editable</label>
+      <textarea id="texto-final" rows="16"></textarea>
+      <div class="acciones-documento" role="group" aria-label="Formas de enviar o guardar la propuesta">
+        <button type="button" id="btn-escuchar-final">Escuchar el documento</button>
+        <a class="boton" id="btn-correo" href="#">Enviar por correo a la institución</a>
+        <a class="boton" id="btn-whatsapp" href="#" hidden>Compartir por WhatsApp</a>
+        <button type="button" id="btn-copiar" class="secundario">Copiar el texto</button>
+        <button type="button" id="btn-descargar" class="secundario">Descargar como archivo de texto</button>
+        <button type="button" id="btn-brf-propuesta" class="secundario">Descargar en braille (punto BRF)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/propuestas.js"></script>
+</body>
+</html>

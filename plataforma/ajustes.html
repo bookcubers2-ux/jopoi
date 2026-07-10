@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accesibilidad y perfil sensorial | JOPÓI</title>
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html">JOPÓI</a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Mi perfil de accesibilidad</h1>
+    <p>Elija su perfil una sola vez. La plataforma completa se adapta y lo recuerda en este dispositivo. Siempre puede ajustar cada detalle por separado con la barra superior.</p>
+    <p id="estado-ajustes" role="status" aria-live="polite"></p>
+
+    <fieldset>
+      <legend>Perfil sensorial</legend>
+      <button type="button" data-perfil-boton="ceguera" aria-pressed="false">Uso lector de pantalla o línea braille</button>
+      <p class="ayuda-campo">La estructura de la página ya está optimizada para lectores de pantalla y líneas braille. Este perfil lo deja registrado para futuras mejoras de navegación.</p>
+      <button type="button" data-perfil-boton="bajavision" aria-pressed="false">Tengo baja visión</button>
+      <p class="ayuda-campo">Activa letra muy grande, espaciado amplio y el modo oscuro de alto contraste.</p>
+      <button type="button" data-perfil-boton="neurodivergente" aria-pressed="false">Prefiero lectura simplificada</button>
+      <p class="ayuda-campo">Activa espaciado amplio y abre los documentos directamente en su versión de Lectura Fácil con pictogramas.</p>
+      <button type="button" data-perfil-boton="" class="secundario" aria-pressed="false">Quitar perfil y volver al inicio estándar</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Voz que lee la plataforma</legend>
+      <label for="control-velocidad">Velocidad de la voz: <span id="valor-velocidad">1</span></label>
+      <p class="ayuda-campo">1 es velocidad normal. Menos de 1 es más lento. Más de 1 es más rápido.</p>
+      <input type="range" id="control-velocidad" min="0.5" max="2" step="0.1" value="1">
+      <button type="button" id="btn-probar-voz">Probar la voz</button>
+      <p class="ayuda-campo">La plataforma elige de forma automática la voz en español más natural que tenga su dispositivo. En Windows y Android modernos, esas voces son de calidad casi humana.</p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Lectura Fácil</legend>
+      <label for="control-lf-auto">
+        <input type="checkbox" id="control-lf-auto" style="width:auto;min-height:auto">
+        Abrir los documentos directamente en versión simplificada
+      </label>
+    </fieldset>
+
+    <h2>Atajos de teclado</h2>
+    <ul>
+      <li>Alt más 1: ir a las leyes y proyectos.</li>
+      <li>Alt más 2: ir a digitalizar un documento.</li>
+      <li>Alt más 3: ir a escribir mi propuesta.</li>
+      <li>Alt más 4: ir a esta página de accesibilidad.</li>
+      <li>Alt más 0: leer la página actual en voz alta.</li>
+    </ul>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/ajustes.js"></script>
+</body>
+</html>

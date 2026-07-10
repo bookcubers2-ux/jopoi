@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JOPÓI">
+  <title>JOPÓI</title>
+  <rect width="64" height="64" fill="#004d00"/>
+  <path fill="#ffffff" d="M20 40c0-1.6 1.2-2.8 2.8-2.8H29l-4.5-4.5c-1.1-1.1-1.1-2.9 0-4s2.9-1.1 4 0L37 37.2V48H26.5c-3.6 0-6.5-2.9-6.5-6.5V40z"/>
+  <path fill="#ffffff" d="M44 26c0 1.6-1.2 2.8-2.8 2.8H35l4.5 4.5c1.1 1.1 1.1 2.9 0 4s-2.9 1.1-4 0L27 28.8V18h10.5c3.6 0 6.5 2.9 6.5 6.5V26z" opacity="0.92"/>
+</svg>

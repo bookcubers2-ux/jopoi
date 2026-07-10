@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Qué es JOPÓI | JOPÓI</title>
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html">JOPÓI</a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Qué es JOPÓI</h1>
+    <p><strong>Jopói</strong> es una palabra guaraní. Significa <strong>intercambio recíproco</strong>: manos abiertas que dan y reciben.</p>
+    <p>JOPÓI es una infraestructura cívica digital que permite a la juventud, y en especial a las personas ciegas, con baja visión y neurodivergentes, leer las leyes de su región y presentar propuestas al parlamento sin intermediarios.</p>
+
+    <h2>Nuestra filosofía: Reciprocidad Democrática</h2>
+    <p>Rechazamos la inclusión entendida como caridad. No pedimos permiso para participar: construimos la herramienta que obliga al sistema a adaptarse a la ciudadanía.</p>
+    <ul>
+      <li>Primero las personas ciegas: navegación perfecta con lector de pantalla y línea braille.</li>
+      <li>Después las personas neurodivergentes: bloques cortos, Lectura Fácil, pictogramas, cero distracciones.</li>
+      <li>Después las personas con baja visión: alto contraste, letra grande, espaciado amplio.</li>
+      <li>El resultado es mejor para todas y todos.</li>
+    </ul>
+
+    <h2>Sus derechos respaldan esta plataforma</h2>
+    <ul>
+      <li>Ley número 223, Ley General para Personas con Discapacidad (Bolivia, 2012): garantiza el acceso a la información y a la participación política.</li>
+      <li>Ley número 341 de Participación y Control Social (Bolivia, 2013): garantiza el derecho a proponer y fiscalizar.</li>
+      <li>Convención sobre los Derechos de las Personas con Discapacidad (Naciones Unidas), artículos 9, 21 y 29: accesibilidad, libertad de información y participación en la vida política.</li>
+    </ul>
+
+    <h2>Código abierto para el mundo</h2>
+    <p>JOPÓI nace en Santa Cruz, Bolivia, con el apoyo de la Youth Democracy Network. Todo su código es libre: cualquier organización, desde Kenia hasta Ucrania, puede copiarlo, traducirlo y lanzar su propia democracia accesible editando un solo archivo de configuración.</p>
+    <p>La plataforma funciona sin conexión a internet una vez cargada, no rastrea a nadie y no exige crear cuentas para leer las leyes.</p>
+
+    <h2>Cómo se hizo la parte técnica</h2>
+    <ul>
+      <li>Braille: exportación al formato punto BRF, el estándar mundial de impresoras y líneas braille, con signografía española de grado 1.</li>
+      <li>Lectura Fácil: siguiendo las pautas de la norma UNE 153101, la primera norma técnica mundial de Lectura Fácil.</li>
+      <li>Pictogramas: banco propio sin conexión más los pictogramas de ARASAAC, el catálogo aumentativo más usado del mundo.</li>
+      <li>Reconocimiento de documentos: el texto se extrae dentro del dispositivo de cada persona. Su documento nunca viaja a un servidor.</li>
+    </ul>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+</body>
+</html>

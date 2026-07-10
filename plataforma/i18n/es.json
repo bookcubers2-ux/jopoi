@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "idioma": "Español",
+    "codigo": "es",
+    "estado": "completo",
+    "nota": "Diccionario base. Las páginas HTML están escritas en español; este archivo define las claves que una traducción debe cubrir para lanzar JOPÓI en otro idioma. Ver docs/GUIA-FORK.md."
+  },
+  "nav.leyes": "Leyes y proyectos",
+  "nav.ocr": "Digitalizar un documento",
+  "nav.propuestas": "Escribir mi propuesta",
+  "nav.accesibilidad": "Accesibilidad",
+  "nav.acerca": "Qué es JOPÓI",
+  "lema": "Intercambio recíproco: la democracia se adapta a usted, no al revés.",
+  "accion.escuchar": "Escuchar",
+  "accion.detener": "Detener la voz",
+  "accion.simplificar": "Modo simplificado (Lectura Fácil)",
+  "accion.braille": "Descargar en braille (archivo punto BRF)",
+  "accion.dictar": "Dictar por voz en este campo",
+  "accion.proponer": "Opinar o proponer sobre este documento",
+  "estado.sinConexion": "Sin conexión. La plataforma sigue funcionando con los documentos guardados.",
+  "estado.conConexion": "Con conexión a internet.",
+  "feed.titulo": "Leyes y proyectos de su región",
+  "feed.vigente": "Ley vigente",
+  "feed.proyecto": "Proyecto en debate",
+  "lf.titulo": "Versión simplificada (Lectura Fácil)",
+  "lf.glosario": "Palabras difíciles de este documento",
+  "propuesta.titulo": "Escribir una propuesta para la institución"
+}

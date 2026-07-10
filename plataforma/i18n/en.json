@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "idioma": "English",
+    "codigo": "en",
+    "estado": "base para traducción",
+    "nota": "Reference translation of the base dictionary keys. A full English fork should also translate the HTML pages and data/leyes.json."
+  },
+  "nav.leyes": "Laws and bills",
+  "nav.ocr": "Digitize a document",
+  "nav.propuestas": "Write my proposal",
+  "nav.accesibilidad": "Accessibility",
+  "nav.acerca": "About JOPÓI",
+  "lema": "Reciprocal exchange: democracy adapts to you, not the other way around.",
+  "accion.escuchar": "Listen",
+  "accion.detener": "Stop the voice",
+  "accion.simplificar": "Simplified mode (Easy Read)",
+  "accion.braille": "Download in braille (BRF file)",
+  "accion.dictar": "Dictate by voice into this field",
+  "accion.proponer": "Comment or propose on this document",
+  "estado.sinConexion": "Offline. The platform keeps working with saved documents.",
+  "estado.conConexion": "Connected to the internet.",
+  "feed.titulo": "Laws and bills in your region",
+  "feed.vigente": "Law in force",
+  "feed.proyecto": "Bill under debate",
+  "lf.titulo": "Simplified version (Easy Read)",
+  "lf.glosario": "Difficult words in this document",
+  "propuesta.titulo": "Write a proposal for the institution"
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digitalizar un documento | JOPÓI</title>
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html">JOPÓI</a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Convertir un documento escaneado en texto accesible</h1>
+    <p>Muchas instituciones publican leyes como imágenes escaneadas que el lector de pantalla no puede leer. Aquí eso se corrige:</p>
+    <ol>
+      <li>Suba el archivo PDF o la foto del documento.</li>
+      <li>La plataforma extrae el texto <strong>dentro de su propio dispositivo</strong>. El documento no se envía a ningún servidor.</li>
+      <li>El texto queda limpio y listo para escucharlo con voz, leerlo en braille o descargarlo para impresora braille.</li>
+    </ol>
+    <p class="aviso-caja">La primera vez se necesita internet para descargar la herramienta de lectura. Después queda guardada y funciona sin conexión.</p>
+
+    <div class="zona-carga">
+      <label for="archivo-ocr">Elegir el archivo PDF o la imagen</label>
+      <p class="ayuda-campo">Formatos aceptados: PDF, JPG, PNG. Si es una foto, procure que tenga buena luz.</p>
+      <input type="file" id="archivo-ocr" accept=".pdf,image/*">
+    </div>
+
+    <progress id="progreso-ocr" max="1" value="0" hidden aria-label="Avance de la lectura del documento"></progress>
+    <p id="estado-ocr" role="status" aria-live="polite"></p>
+
+    <section class="resultado-ocr" id="resultado-ocr" hidden>
+      <h2 tabindex="-1">Texto extraído del documento</h2>
+      <p>Revise el texto. Puede corregirlo a mano o con el micrófono antes de continuar.</p>
+      <label for="texto-ocr">Texto extraído, editable</label>
+      <textarea id="texto-ocr" rows="12"></textarea>
+      <div class="acciones-documento" role="group" aria-label="Acciones sobre el texto extraído">
+        <button type="button" id="btn-escuchar-ocr">Escuchar el texto</button>
+        <button type="button" id="btn-abrir-lector">Abrir en el lector accesible</button>
+        <button type="button" id="btn-brf-ocr" class="secundario">Descargar en braille (punto BRF)</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/ocr.js"></script>
+</body>
+</html>

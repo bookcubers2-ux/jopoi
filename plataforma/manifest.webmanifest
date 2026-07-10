@@ -1,0 +1,15 @@
+{
+  "name": "JOPÓI. Democracia accesible",
+  "short_name": "JOPÓI",
+  "description": "Plataforma cívica accesible: leyes en voz, braille y Lectura Fácil, y propuestas ciudadanas al parlamento.",
+  "lang": "es",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#004d00",
+  "icons": [
+    { "src": "img/icono.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "img/icono-maskable.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
