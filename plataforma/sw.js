@@ -9,16 +9,17 @@
  */
 'use strict';
 
-var VERSION = 'jopoi-v4';
+var VERSION = 'jopoi-v5';
 var PRECARGA = [
   'index.html', 'documento.html', 'ocr.html', 'convertir.html', 'propuestas.html',
   'ajustes.html', 'acerca.html',
   'css/jopoi.css',
   'js/config.js', 'js/middleware.js', 'js/braille.js', 'js/lectura-facil.js',
-  'js/tts.js', 'js/stt.js', 'js/pictogramas.js', 'js/a11y.js',
+  'js/tts.js', 'js/stt.js', 'js/pictogramas.js', 'js/a11y.js', 'js/instalar.js',
   'js/feed.js', 'js/documento.js', 'js/ocr.js', 'js/convertir.js', 'js/propuestas.js', 'js/ajustes.js',
   'data/leyes.json',
   'img/icono.svg', 'img/icono-maskable.svg',
+  'img/icono-192.png', 'img/icono-512.png', 'img/icono-maskable-512.png', 'img/apple-touch-icon.png',
   'manifest.webmanifest'
 ];
 
