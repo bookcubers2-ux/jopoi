@@ -106,7 +106,14 @@ header.sitio .marca {
   font-weight: 800;
   color: var(--blanco);
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+/* Logo oficial: el hemiciclo de la asamblea, en blanco sobre el verde. */
+header.sitio .logo-marca {
+  height: 2.4rem;
+  width: auto;
 }
 header.sitio .lema { color: var(--blanco); font-size: 0.95rem; }
 
