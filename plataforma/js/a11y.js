@@ -143,14 +143,59 @@
     }
   });
 
+  /* ------------------------------------------------------------------ */
+  /* Foco al llegar desde el menú (lectores de pantalla)                 */
+  /* Al tocar un módulo, la persona debe aterrizar en el título de ese   */
+  /* módulo, no de vuelta en la barra superior de la página nueva.       */
+  /* ------------------------------------------------------------------ */
+  function enfocarContenidoAlLlegar() {
+    var vieneDeDentro = false;
+    try {
+      vieneDeDentro = !!document.referrer &&
+        new URL(document.referrer).origin === location.origin;
+    } catch (e) { vieneDeDentro = false; }
+    if (!vieneDeDentro) return; // llegada externa: orden normal completo
+
+    var titulo = document.querySelector('main h1') || document.querySelector('main');
+    if (!titulo) return;
+    if (!titulo.hasAttribute('tabindex')) titulo.setAttribute('tabindex', '-1');
+    titulo.focus();
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Botón "Volver al inicio" como ÚLTIMO elemento de cada página        */
+  /* Evita tener que retroceder gesto por gesto desde el final.          */
+  /* ------------------------------------------------------------------ */
+  function construirVolverArriba() {
+    var pie = document.querySelector('footer.sitio');
+    if (!pie || document.getElementById('btn-volver-arriba')) return;
+    var boton = document.createElement('button');
+    boton.type = 'button';
+    boton.id = 'btn-volver-arriba';
+    boton.className = 'secundario';
+    boton.textContent = 'Volver al inicio de la página';
+    boton.addEventListener('click', function () {
+      window.scrollTo(0, 0);
+      var primero = document.getElementById('a11y-menos') ||
+        document.querySelector('.saltar') || document.body;
+      if (!primero.hasAttribute('tabindex') && primero === document.body) {
+        primero.setAttribute('tabindex', '-1');
+      }
+      primero.focus();
+    });
+    pie.appendChild(boton);
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
     construirBarra();
+    construirVolverArriba();
     reflejarAltComoTooltip();
     // Marcar en la navegación la página actual para el lector de pantalla.
     var actual = location.pathname.split('/').pop() || 'index.html';
     document.querySelectorAll('nav a').forEach(function (a) {
       if (a.getAttribute('href') === actual) a.setAttribute('aria-current', 'page');
     });
+    enfocarContenidoAlLlegar();
   });
 
   /* Service worker: la plataforma completa funciona sin conexión. */

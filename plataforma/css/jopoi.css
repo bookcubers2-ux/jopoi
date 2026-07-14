@@ -159,6 +159,7 @@ footer.sitio {
   padding: 1.5rem 1.25rem;
   font-size: 0.9rem;
 }
+#btn-volver-arriba { margin-top: 0.5rem; }
 footer.sitio p { max-width: none; }
 
 /* ------------------------------------------------------------------ */
