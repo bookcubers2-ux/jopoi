@@ -78,6 +78,48 @@
     sintetizador.speak(u);
   }
 
+  /* ------------------------------------------------------------------ */
+  /* Botón "Detener la voz" acompañante                                  */
+  /* Aparece justo al lado del botón de escuchar que se pulsó, para que  */
+  /* una persona con lector de pantalla no tenga que viajar hasta la     */
+  /* barra superior para frenar la voz. Al terminar, desaparece y el     */
+  /* foco vuelve al botón original.                                      */
+  /* ------------------------------------------------------------------ */
+  var botonOrigen = null;
+
+  function mostrarDetenerJunto() {
+    var origen = document.activeElement;
+    if (!origen || origen.tagName !== 'BUTTON') return;
+    if (origen.closest && origen.closest('.barra-a11y')) return; // la barra ya tiene su propio detener
+    if (/detener/i.test(origen.textContent)) return;
+    var vecino = origen.nextElementSibling;
+    if (vecino && vecino.tagName === 'BUTTON' && /detener/i.test(vecino.textContent)) return; // ya hay uno al lado
+
+    botonOrigen = origen;
+    var boton = document.getElementById('jopoi-detener-junto');
+    if (!boton) {
+      boton = document.createElement('button');
+      boton.type = 'button';
+      boton.id = 'jopoi-detener-junto';
+      boton.className = 'secundario';
+      boton.textContent = 'Detener la voz';
+      boton.addEventListener('click', function () { detener(); });
+    }
+    origen.insertAdjacentElement('afterend', boton);
+    boton.hidden = false;
+  }
+
+  function retirarDetenerJunto() {
+    var boton = document.getElementById('jopoi-detener-junto');
+    if (!boton) return;
+    var teniaFoco = document.activeElement === boton;
+    boton.remove();
+    if (teniaFoco && botonOrigen && document.contains(botonOrigen)) botonOrigen.focus();
+    botonOrigen = null;
+  }
+
+  document.addEventListener('jopoi:tts-fin', retirarDetenerJunto);
+
   /**
    * Arranca la lectura con una pausa breve después de cancel().
    * En Chrome, llamar a speak() inmediatamente después de cancel()
@@ -103,6 +145,7 @@
     }
     if (!texto || !String(texto).trim()) return;
     detener();
+    mostrarDetenerJunto();
     var partes = window.JopoiTexto
       ? window.JopoiTexto.fragmentarEnBloques(String(texto), 260)
       : [String(texto)];
@@ -117,6 +160,7 @@
   function hablarBloques(elementos) {
     if (!sintetizador || !elementos.length) return;
     detener();
+    mostrarDetenerJunto();
     elementos.forEach(function (el) {
       enCola.push({ texto: el.textContent, elemento: el });
     });
