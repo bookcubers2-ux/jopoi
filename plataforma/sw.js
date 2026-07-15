@@ -9,9 +9,9 @@
  */
 'use strict';
 
-var VERSION = 'jopoi-v6';
+var VERSION = 'jopoi-v7';
 var PRECARGA = [
-  'index.html', 'documento.html', 'ocr.html', 'convertir.html', 'propuestas.html',
+  'index.html', 'tutorial.html', 'documento.html', 'ocr.html', 'convertir.html', 'propuestas.html',
   'ajustes.html', 'acerca.html',
   'css/jopoi.css',
   'js/config.js', 'js/middleware.js', 'js/braille.js', 'js/lectura-facil.js',
