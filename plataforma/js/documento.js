@@ -139,6 +139,52 @@
       'todo el texto de esta página ya es compatible, o descargue el archivo punto BRF.</p>';
   }
 
+  /* --------------- apoyos cognitivos (COGA, WCAG 2.2) --------------- */
+
+  // Resumen en lenguaje claro SIEMPRE al inicio del documento
+  // (patrón COGA "Provide a Summary of Long Documents") y el recuadro
+  // "¿Qué significa esto para mí?" (práctica de los parlamentos con
+  // versión fácil, como el escocés).
+  function pintarApoyosCognitivos(doc) {
+    var zona = document.getElementById('apoyos-cognitivos');
+    if (!zona) return;
+    var html = '';
+    if (doc.resumen) {
+      html += '<h2>Resumen en lenguaje claro</h2><p>' +
+        window.JopoiTexto.procesar(doc.resumen) + '</p>';
+    }
+    if (Array.isArray(doc.paraMi) && doc.paraMi.length) {
+      html += '<section class="para-mi"><h3>¿Qué significa esto para usted?</h3><ul>' +
+        doc.paraMi.map(function (f) { return '<li>' + f + '</li>'; }).join('') +
+        '</ul></section>';
+    }
+    // El camino de la ley: dónde está esta norma en el proceso.
+    var pasos = ['Idea', 'Debate en la Asamblea', 'Votación', 'Ley vigente'];
+    var actual = doc.estado === 'vigente' ? 3 : (doc.estado === 'proyecto' ? 1 : -1);
+    if (actual >= 0) {
+      html += '<h2>El camino de esta norma</h2>' +
+        '<ol class="camino-ley" aria-label="Etapas del proceso legislativo">' +
+        pasos.map(function (p, i) {
+          return '<li' + (i === actual ? ' aria-current="step"' : '') + '>' +
+            (i + 1) + '. ' + p + (i === actual ? ' (aquí está ahora)' : '') + '</li>';
+        }).join('') + '</ol>';
+    }
+    zona.innerHTML = html;
+  }
+
+  // Barra fina de progreso de lectura (orientación: cuánto falta).
+  function activarProgresoLectura() {
+    var barra = document.createElement('div');
+    barra.id = 'progreso-lectura';
+    barra.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(barra);
+    window.addEventListener('scroll', function () {
+      var total = document.documentElement.scrollHeight - window.innerHeight;
+      var avance = total > 0 ? (window.scrollY / total) * 100 : 0;
+      barra.style.width = avance + '%';
+    }, { passive: true });
+  }
+
   /* ------------------------- arranque ------------------------------ */
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -150,7 +196,20 @@
       meta.textContent = doc.tipo + (doc.fecha ? '. Fecha: ' + doc.fecha : '') +
         (doc.fuente ? '. Fuente: ' + doc.fuente : '') + (doc.demo ? '. Documento de demostración.' : '');
 
+      pintarApoyosCognitivos(doc);
+      activarProgresoLectura();
       pintarBloques(doc);
+
+      // Modo foco: oculta menús y todo lo que no sea el documento
+      // (COGA Objetivo 6: evitar distracciones).
+      var btnFoco = document.getElementById('btn-modo-foco');
+      if (btnFoco) {
+        btnFoco.addEventListener('click', function () {
+          var activo = document.body.classList.toggle('modo-foco');
+          btnFoco.setAttribute('aria-pressed', activo ? 'true' : 'false');
+          btnFoco.textContent = activo ? 'Salir del modo foco' : 'Modo foco: solo el texto';
+        });
+      }
 
       document.getElementById('btn-escuchar-todo').addEventListener('click', function () {
         var bloques = document.querySelectorAll('#cuerpo-documento .bloque p');

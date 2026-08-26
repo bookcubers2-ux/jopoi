@@ -61,9 +61,17 @@
       '',
       'PEDIDO CONCRETO A LA INSTITUCIÓN',
       d.pedido || '',
-      '',
-      'Esta propuesta se presenta en ejercicio del derecho a la participación reconocido por la Constitución y por la Ley número 341 de Participación y Control Social. Solicito respuesta formal por los canales establecidos.'
+      ''
     ];
+    var apoyado = document.getElementById('campo-apoyado');
+    if (apoyado && apoyado.checked) {
+      lineas.push('NOTA DE APOYO');
+      lineas.push('Esta propuesta fue escrita con el apoyo de otra persona, a pedido y bajo la decisión de quien la presenta. La autoría es de la persona presentante.');
+      lineas.push('');
+    }
+    lineas = lineas.concat([
+      'Esta propuesta se presenta en ejercicio del derecho a la participación reconocido por la Constitución y por la Ley número 341 de Participación y Control Social. Solicito respuesta formal por los canales establecidos.'
+    ]);
     return window.JopoiTexto.procesar(lineas.join('\n'));
   }
 
@@ -124,6 +132,19 @@
     }
 
     document.getElementById('btn-generar').addEventListener('click', generar);
+
+    // Frases iniciadoras: un toque y la frase queda escrita en el campo,
+    // lista para continuar (apoyo cognitivo para arrancar a escribir).
+    document.querySelectorAll('[data-frase]').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var campo = document.getElementById(chip.getAttribute('data-frase'));
+        if (!campo) return;
+        var separador = campo.value && !/\s$/.test(campo.value) ? ' ' : '';
+        campo.value += separador + chip.textContent;
+        campo.dispatchEvent(new Event('input', { bubbles: true }));
+        campo.focus();
+      });
+    });
 
     document.getElementById('btn-escuchar-final').addEventListener('click', function () {
       window.JopoiVoz.hablar(document.getElementById('texto-final').value);

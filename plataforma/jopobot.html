@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JOPOBOT, su asistente | JOPÓI</title>
+  <meta name="description" content="JOPOBOT: el asistente de inteligencia artificial de JOPÓI. Pregúntele por voz o por teclado sobre leyes, la plataforma y cómo participar.">
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="JOPÓI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+  <a class="saltar" href="#btn-microfono-jopobot">Saltar al botón de preguntar por voz</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html"><img src="img/logo.png" alt="" class="logo-marca"><span>JOPÓI</span></a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="tutorial.html">Cómo usar JOPÓI</a></li>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="jopobot.html">JOPOBOT, su asistente</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>JOPOBOT, su asistente</h1>
+    <p>JOPOBOT es el asistente de inteligencia artificial de JOPÓI. Puede preguntarle qué dice una ley, cómo usar un módulo, cuáles son sus derechos o cómo armar su propuesta.</p>
+    <p><strong>No necesita escribir:</strong> toque el botón del micrófono, haga su pregunta hablando, y JOPOBOT le responde con voz. Si prefiere o necesita escribir, más abajo está el teclado.</p>
+    <p class="aviso-caja">JOPOBOT ayuda a entender, pero no reemplaza a la institución: no conoce fechas de sesiones ni da asesoría legal sobre casos personales. Su conversación se guarda solo en su dispositivo.</p>
+
+    <h2>Preguntar por voz</h2>
+    <button type="button" id="btn-microfono-jopobot" class="boton-microfono-grande" aria-label="Preguntar por voz a JOPOBOT">
+      <svg viewBox="0 0 24 24" width="44" height="44" aria-hidden="true" focusable="false">
+        <path fill="currentColor" d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/>
+      </svg>
+      <span>Preguntar por voz</span>
+    </button>
+    <p class="ayuda-campo">Toque, hable, y al terminar su pregunta se envía sola. La respuesta se lee en voz alta.</p>
+
+    <p id="estado-jopobot" role="status" aria-live="polite"></p>
+
+    <h2>La conversación</h2>
+    <div id="log-jopobot" role="log" aria-live="polite" aria-relevant="additions" aria-label="Mensajes de la conversación con JOPOBOT"></div>
+
+    <h2>Preguntar por teclado</h2>
+    <label for="texto-jopobot">Escriba su pregunta</label>
+    <p class="ayuda-campo">Enter envía la pregunta. Shift más Enter baja de línea.</p>
+    <textarea id="texto-jopobot" rows="3" data-sin-dictado="si"></textarea>
+    <div class="acciones-documento" role="group" aria-label="Acciones de la conversación">
+      <button type="button" id="btn-enviar-jopobot">Enviar la pregunta</button>
+      <button type="button" id="btn-borrar-jopobot" class="secundario">Borrar la conversación</button>
+    </div>
+
+    <h2>Ideas de preguntas para empezar</h2>
+    <div class="acciones-documento" role="group" aria-label="Preguntas de ejemplo, toque una para enviarla">
+      <button type="button" class="secundario" data-sugerencia="¿Qué es JOPÓI y qué puedo hacer aquí?">¿Qué es JOPÓI y qué puedo hacer aquí?</button>
+      <button type="button" class="secundario" data-sugerencia="¿Qué derechos me da la Ley 223 de Bolivia?">¿Qué derechos me da la Ley 223?</button>
+      <button type="button" class="secundario" data-sugerencia="Ayúdame a ordenar mi idea para enviar una propuesta a la Asamblea.">Ayúdame a armar mi propuesta</button>
+      <button type="button" class="secundario" data-sugerencia="¿Cómo convierto un documento a braille en esta plataforma?">¿Cómo convierto un documento a braille?</button>
+    </div>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/instalar.js"></script>
+  <script src="js/jopobot.js"></script>
+</body>
+</html>

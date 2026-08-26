@@ -10,3 +10,12 @@ node_modules/
 Thumbs.db
 .DS_Store
 .vercel/
+
+# Guia con clave de API: JAMAS publicar
+GUIA-CREAR-AGENTE-IA.md
+
+# Material interno del proyecto: JAMAS publicar
+REPORTE-FINANCIERO/
+financial docs/
+DOCUMENTOS-OFICIALES/
+*.pdf

@@ -29,6 +29,7 @@
       <ul>
         <li><a href="tutorial.html">Cómo usar JOPÓI</a></li>
         <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="jopobot.html">JOPOBOT, su asistente</a></li>
         <li><a href="ocr.html">Digitalizar un documento</a></li>
         <li><a href="convertir.html">Convertir a braille</a></li>
         <li><a href="propuestas.html">Escribir mi propuesta</a></li>
@@ -45,12 +46,15 @@
       <h1 id="titulo-documento"></h1>
       <p class="meta-ley" id="meta-documento"></p>
 
+      <section id="apoyos-cognitivos" aria-label="Apoyos para entender este documento"></section>
+
       <div class="acciones-documento" role="group" aria-label="Acciones sobre este documento">
         <button type="button" id="btn-escuchar-todo">Escuchar todo el documento</button>
         <button type="button" id="btn-detener-voz" class="secundario">Detener la voz</button>
         <button type="button" id="btn-simplificar">Modo simplificado (Lectura Fácil)</button>
         <button type="button" id="btn-brf">Descargar en braille (archivo punto BRF)</button>
         <button type="button" id="btn-braille-pantalla" class="secundario">Ver muestra en braille</button>
+        <button type="button" id="btn-modo-foco" class="secundario" aria-pressed="false">Modo foco: solo el texto</button>
         <a class="boton secundario" id="btn-proponer" href="propuestas.html">Opinar o proponer sobre este documento</a>
       </div>
       <p id="estado-braille" role="status" aria-live="polite"></p>

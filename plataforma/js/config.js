@@ -41,3 +41,15 @@ window.JOPOI_CONFIG = {
     'Convención sobre los Derechos de las Personas con Discapacidad, artículos 9, 21 y 29 (Naciones Unidas)'
   ]
 };
+
+/* ------------------------------------------------------------------ */
+/* JOPOBOT: el asistente de inteligencia artificial de JOPÓI          */
+/* La clave de la IA NO está aquí ni en ningún archivo del sitio:     */
+/* vive como secreto en la Edge Function de Supabase. Estas dos       */
+/* claves son públicas por diseño (las tablas tienen RLS activo).     */
+/* ------------------------------------------------------------------ */
+window.JOPOI_CONFIG.jopobot = {
+  supabaseUrl: 'https://akdzvhnxkajwbrfyqqmt.supabase.co',
+  supabaseAnon: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFrZHp2aG54a2Fqd2JyZnlxcW10Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODY3Mjk1MjIsImV4cCI6MjEwMjMwNTUyMn0.GxvsCs3cTLNfe-cAhfHFWFF_O9mG3QHicE3bL_qAXeg',
+  funcion: 'jopobot'
+};

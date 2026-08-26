@@ -400,3 +400,113 @@ progress { width: 100%; height: 1.5rem; accent-color: var(--verde); }
   nav.principal a { width: 100%; }
   .barra-a11y button { flex: 1 1 auto; }
 }
+
+/* ------------------------------------------------------------------ */
+/* JOPOBOT: la conversación                                            */
+/* ------------------------------------------------------------------ */
+.boton-microfono-grande {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.3rem;
+  padding: 1rem 1.6rem;
+  min-height: 72px;
+}
+.boton-microfono-grande.grabando {
+  background: var(--papel);
+  color: var(--tinta);
+  outline: 4px dashed var(--tinta);
+  outline-offset: -6px;
+}
+#log-jopobot {
+  border: 3px solid var(--tinta);
+  padding: 1rem;
+  min-height: 6rem;
+  max-height: 55vh;
+  overflow-y: auto;
+}
+#log-jopobot .mensaje-usuario,
+#log-jopobot .mensaje-bot {
+  border-left: 6px solid var(--tinta);
+  padding: 0.6rem 1rem;
+  margin-bottom: 1rem;
+  max-width: 70ch;
+}
+#log-jopobot .mensaje-bot { background: var(--papel); border-left-style: double; }
+#log-jopobot .quien-habla { font-weight: 800; margin-bottom: 0.25rem; font-size: 0.95rem; }
+#log-jopobot .texto-mensaje { margin-bottom: 0.5rem; white-space: pre-wrap; }
+
+/* ------------------------------------------------------------------ */
+/* Accesibilidad cognitiva (COGA / WCAG 2.2 / Information for All)     */
+/* ------------------------------------------------------------------ */
+
+/* El foco de teclado nunca queda tapado por nada fijo (WCAG 2.4.11) */
+html { scroll-padding-top: 5rem; }
+
+/* Regla de lectura: banda que sigue al puntero para no perder la
+   línea (apoyo con evidencia para dislexia y TDAH) */
+#regla-lectura {
+  position: fixed;
+  left: 0; right: 0;
+  height: 2.6rem;
+  pointer-events: none;
+  border-top: 3px solid var(--tinta);
+  border-bottom: 3px solid var(--tinta);
+  background: transparent;
+  opacity: 0.5;
+  z-index: 90;
+}
+
+/* Modo foco: solo el texto del documento, sin menús ni distracciones
+   (COGA Objetivo 6: evitar distracciones) */
+body.modo-foco header.sitio nav,
+body.modo-foco header.sitio .lema,
+body.modo-foco .barra-a11y,
+body.modo-foco footer.sitio,
+body.modo-foco #seccion-instalar { display: none !important; }
+
+/* Barra de progreso de lectura del documento */
+#progreso-lectura {
+  position: fixed;
+  top: 0; left: 0;
+  height: 0.4rem;
+  width: 0;
+  background: var(--tinta);
+  z-index: 95;
+}
+
+/* Dónde está esta norma en el camino legislativo */
+ol.camino-ley {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+ol.camino-ley li {
+  border: 3px solid var(--tinta);
+  padding: 0.4rem 0.8rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+ol.camino-ley li[aria-current="step"] {
+  background: var(--tinta);
+  color: var(--papel);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+/* Selector de nivel de lectura (3 niveles) */
+.niveles-lectura { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 1rem 0; }
+
+/* Recuadro "¿Qué significa esto para mí?" */
+.para-mi {
+  border: 4px double var(--tinta);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+.para-mi h3 { margin-top: 0; }
+
+/* Frases para empezar (módulo de propuestas) */
+.frases-iniciadoras { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0 1rem; }

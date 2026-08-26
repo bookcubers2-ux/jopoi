@@ -75,6 +75,7 @@
       '<button type="button" id="a11y-mas" aria-label="Aumentar el tamaño de la letra">A más</button>' +
       '<button type="button" id="a11y-espaciado" aria-pressed="false">Espaciado amplio</button>' +
       '<button type="button" id="a11y-tema" aria-pressed="false">Modo oscuro</button>' +
+      '<button type="button" id="a11y-regla" aria-pressed="false">Regla de lectura</button>' +
       '<button type="button" id="a11y-leer">Leer esta página en voz alta</button>' +
       '<button type="button" id="a11y-parar" hidden>Detener la voz</button>' +
       '<a href="ajustes.html" class="enlace-barra">Mi perfil de accesibilidad</a>' +
@@ -103,6 +104,39 @@
     btnTema.addEventListener('click', function () {
       cambiar({ tema: prefs.tema === 'oscuro' ? 'claro' : 'oscuro' }); refrescarBotones();
     });
+    // Regla de lectura: banda horizontal que sigue al dedo o al cursor
+    // para no perder la línea (apoyo para dislexia y TDAH, con evidencia;
+    // patrón de accesibilidad cognitiva COGA de la W3C).
+    var btnRegla = document.getElementById('a11y-regla');
+    function moverRegla(e) {
+      var regla = document.getElementById('regla-lectura');
+      if (!regla) return;
+      var y = (e.touches && e.touches[0]) ? e.touches[0].clientY : e.clientY;
+      regla.style.top = Math.max(0, y - regla.offsetHeight / 2) + 'px';
+    }
+    function fijarRegla(activa) {
+      var regla = document.getElementById('regla-lectura');
+      if (activa && !regla) {
+        regla = document.createElement('div');
+        regla.id = 'regla-lectura';
+        regla.setAttribute('aria-hidden', 'true');
+        regla.style.top = '40vh';
+        document.body.appendChild(regla);
+        document.addEventListener('mousemove', moverRegla);
+        document.addEventListener('touchmove', moverRegla, { passive: true });
+      } else if (!activa && regla) {
+        regla.remove();
+        document.removeEventListener('mousemove', moverRegla);
+        document.removeEventListener('touchmove', moverRegla);
+      }
+      btnRegla.setAttribute('aria-pressed', activa ? 'true' : 'false');
+    }
+    btnRegla.addEventListener('click', function () {
+      var activa = btnRegla.getAttribute('aria-pressed') !== 'true';
+      cambiar({ reglaLectura: activa });
+      fijarRegla(activa);
+    });
+    if (prefs.reglaLectura) fijarRegla(true);
     btnLeer.addEventListener('click', function () {
       var principal = document.querySelector('main');
       if (!principal || !window.JopoiVoz) return;

@@ -28,6 +28,7 @@
       <ul>
         <li><a href="tutorial.html">Cómo usar JOPÓI</a></li>
         <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="jopobot.html">JOPOBOT, su asistente</a></li>
         <li><a href="ocr.html">Digitalizar un documento</a></li>
         <li><a href="convertir.html">Convertir a braille</a></li>
         <li><a href="propuestas.html">Escribir mi propuesta</a></li>
@@ -50,12 +51,22 @@
         <input type="text" id="campo-nombre" autocomplete="name">
         <label for="campo-comunidad">Su barrio, comunidad o municipio</label>
         <input type="text" id="campo-comunidad">
+        <label for="campo-apoyado" style="font-weight:400">
+          <input type="checkbox" id="campo-apoyado" style="width:auto;min-height:auto">
+          Alguien me está ayudando a escribir. La idea sigue siendo mía.
+        </label>
       </fieldset>
 
       <fieldset>
         <legend>Paso 2. El problema</legend>
         <label for="campo-problema">¿Qué problema vive usted o su comunidad?</label>
         <p class="ayuda-campo">Cuéntelo con sus palabras. Por ejemplo: en mi barrio no hay rampas y las veredas están rotas.</p>
+        <p class="ayuda-campo">Si no sabe cómo empezar, toque una frase y siga escribiendo o dictando:</p>
+        <div class="frases-iniciadoras" role="group" aria-label="Frases para empezar a contar el problema">
+          <button type="button" class="secundario" data-frase="campo-problema">En mi barrio pasa que </button>
+          <button type="button" class="secundario" data-frase="campo-problema">Esto no me gusta porque </button>
+          <button type="button" class="secundario" data-frase="campo-problema">Cada día me cuesta </button>
+        </div>
         <textarea id="campo-problema" rows="5"></textarea>
       </fieldset>
 
@@ -63,6 +74,12 @@
         <legend>Paso 3. Su propuesta</legend>
         <label for="campo-propuesta">¿Qué propone usted para resolverlo?</label>
         <p class="ayuda-campo">No necesita lenguaje legal. La plataforma le dará el formato formal.</p>
+        <p class="ayuda-campo">Frases para empezar, si le sirven:</p>
+        <div class="frases-iniciadoras" role="group" aria-label="Frases para empezar a proponer">
+          <button type="button" class="secundario" data-frase="campo-propuesta">Yo quiero que </button>
+          <button type="button" class="secundario" data-frase="campo-propuesta">Mi idea es que </button>
+          <button type="button" class="secundario" data-frase="campo-propuesta">Sería bueno que </button>
+        </div>
         <textarea id="campo-propuesta" rows="5"></textarea>
       </fieldset>
 
@@ -97,6 +114,14 @@
         <button type="button" id="btn-descargar" class="secundario">Descargar como archivo de texto</button>
         <button type="button" id="btn-brf-propuesta" class="secundario">Descargar en braille (punto BRF)</button>
       </div>
+      <section class="para-mi" id="que-pasa-despues">
+        <h3>Qué pasa después de enviar</h3>
+        <ul>
+          <li>1. Su propuesta llega a la institución por el medio que usted eligió.</li>
+          <li>2. La institución tiene el deber de recibirla. Es su derecho por la Ley 341.</li>
+          <li>3. Guarde su copia. Con ella puede preguntar qué pasó con su propuesta.</li>
+        </ul>
+      </section>
     </section>
   </main>
 
