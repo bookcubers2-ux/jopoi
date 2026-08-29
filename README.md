@@ -85,6 +85,12 @@ JOPOI/
     └── manifest.webmanifest   <- instalable como aplicación
 ```
 
+## Financiamiento y reconocimiento
+
+JOPÓI fue desarrollada con el apoyo del **YDN Mini Grants Program 2026** de la **Youth Democracy Network (YDN)**, implementado por el **Permanent Secretariat of the Community of Democracies** con el apoyo del **Departamento de Estado de los Estados Unidos**. Proyecto *Building New Digital Systems for Engagement with Public Institutions*, ejecutado por **Bookcubers** en alianza con la **Asamblea Legislativa Departamental de Santa Cruz** y el **Consejo Departamental de la Juventud de Santa Cruz**, Bolivia.
+
+JOPÓI was developed with the support of the **YDN Mini Grants Program 2026** of the **Youth Democracy Network (YDN)**, implemented by the **Permanent Secretariat of the Community of Democracies** with the support of the **U.S. Department of State**. The contents of this repository are the sole responsibility of the project team and do not necessarily reflect the views of the funders.
+
 ## Licencia
 
 MIT. Úselo, cámbielo, tradúzcalo. La democracia accesible no tiene dueño.
