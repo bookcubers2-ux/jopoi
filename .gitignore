@@ -19,3 +19,12 @@ REPORTE-FINANCIERO/
 financial docs/
 DOCUMENTOS-OFICIALES/
 *.pdf
+
+# Material interno nuevo: JAMAS publicar
+2DA SESION ESPEJO FOTOS/
+CONTEXTO/
+DELIVERABLES/
+ENVIAR-POR-CORREO/
+*.png
+!plataforma/img/*.png
+videitos/

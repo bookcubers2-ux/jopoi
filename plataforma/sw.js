@@ -9,15 +9,15 @@
  */
 'use strict';
 
-var VERSION = 'jopoi-v8';
+var VERSION = 'jopoi-v9';
 var PRECARGA = [
-  'index.html', 'tutorial.html', 'jopobot.html', 'documento.html', 'ocr.html', 'convertir.html', 'propuestas.html',
+  'index.html', 'tutorial.html', 'escuela.html', 'jopobot.html', 'documento.html', 'ocr.html', 'convertir.html', 'propuestas.html',
   'ajustes.html', 'acerca.html',
   'css/jopoi.css',
   'js/config.js', 'js/middleware.js', 'js/braille.js', 'js/lectura-facil.js',
   'js/tts.js', 'js/stt.js', 'js/pictogramas.js', 'js/a11y.js', 'js/instalar.js',
-  'js/jopobot.js', 'js/feed.js', 'js/documento.js', 'js/ocr.js', 'js/convertir.js', 'js/propuestas.js', 'js/ajustes.js',
-  'data/leyes.json',
+  'js/jopobot.js', 'js/escuela.js', 'js/feed.js', 'js/documento.js', 'js/ocr.js', 'js/convertir.js', 'js/propuestas.js', 'js/ajustes.js',
+  'data/leyes.json', 'data/cursos.json',
   'img/icono.svg', 'img/icono-maskable.svg', 'img/logo.png',
   'img/icono-192.png', 'img/icono-512.png', 'img/icono-maskable-512.png', 'img/apple-touch-icon.png',
   'manifest.webmanifest'

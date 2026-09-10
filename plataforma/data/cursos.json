@@ -1,0 +1,707 @@
+[
+  {
+    "id": "curso-democracia",
+    "titulo": "Qué es la democracia y por qué usted es parte de ella",
+    "insignia": "Ciudadana o ciudadano que sabe dónde está parado",
+    "resumen": "Aprenda qué es la democracia con palabras sencillas, por qué usted forma parte de ella aunque nadie se lo haya dicho, y qué puede hacer entre una elección y otra.",
+    "objetivos": [
+      "Explicar con sus propias palabras qué es la democracia.",
+      "Nombrar al menos tres formas de participar que no son votar.",
+      "Reconocer que su voz cuenta aunque usted tenga una discapacidad."
+    ],
+    "lecciones": [
+      {
+        "id": "dem-1",
+        "titulo": "La democracia en palabras sencillas",
+        "bloques": [
+          "Democracia quiere decir que el pueblo manda. La palabra viene del griego. Demos quiere decir pueblo. Kratos quiere decir poder. Poder del pueblo.",
+          "En una democracia, las decisiones importantes no las toma una sola persona. Las toma el pueblo, o las toman personas que el pueblo eligió para eso.",
+          "Bolivia es una democracia. Eso significa que usted, y no solo las autoridades, tiene poder sobre las decisiones del país.",
+          "La democracia no es solo votar cada cinco años. Votar es una parte. Pero hay muchas otras formas de participar, y las va a conocer en este curso."
+        ],
+        "glosario": [
+          { "palabra": "Democracia", "significado": "sistema donde el pueblo tiene el poder de decidir" },
+          { "palabra": "Autoridad", "significado": "persona que fue elegida o nombrada para tomar decisiones públicas" }
+        ],
+        "paraMi": "Usted es parte del pueblo. Entonces usted es parte de quien manda. Nadie le tiene que dar permiso para opinar sobre las decisiones públicas: ese derecho ya es suyo.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Qué quiere decir la palabra democracia?",
+            "opciones": [
+              "Que manda una sola persona muy sabia",
+              "Que el pueblo tiene el poder de decidir",
+              "Que solo mandan las personas que estudiaron"
+            ],
+            "correcta": 1,
+            "explicacion": "Democracia viene del griego: demos, que es pueblo, y kratos, que es poder. El poder es del pueblo, y usted es parte del pueblo.",
+            "pista": "Piense en las dos palabras griegas que vimos en la lección."
+          },
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "En una democracia, la única forma de participar es votando en las elecciones.",
+            "correcta": 1,
+            "explicacion": "Es falso. Votar es importante, pero hay muchas otras formas: proponer, opinar, pedir información, vigilar a las autoridades y organizarse con otras personas.",
+            "pista": "Recuerde el último bloque de la lección."
+          }
+        ]
+      },
+      {
+        "id": "dem-2",
+        "titulo": "Las tres formas de democracia en Bolivia",
+        "bloques": [
+          "La Constitución de Bolivia dice que en el país hay tres formas de democracia. Las tres valen igual.",
+          "La primera es la democracia directa y participativa. Es cuando el pueblo decide por sí mismo. Por ejemplo, en un referendo, o cuando la gente presenta una propuesta de ley.",
+          "La segunda es la democracia representativa. Es cuando el pueblo elige a personas para que decidan en su nombre. Por ejemplo, cuando usted vota por una asambleísta o un asambleísta.",
+          "La tercera es la democracia comunitaria. Es cuando los pueblos indígenas eligen a sus autoridades según sus propias normas y costumbres, sin partidos políticos.",
+          "En Santa Cruz existen las tres. Por eso, cinco asambleístas del departamento son elegidos por las naciones indígenas según sus propias formas, y no por partidos."
+        ],
+        "glosario": [
+          { "palabra": "Referendo", "significado": "votación donde el pueblo dice sí o no a una pregunta importante" },
+          { "palabra": "Democracia comunitaria", "significado": "cuando un pueblo indígena elige a sus autoridades según sus propias costumbres" }
+        ],
+        "paraMi": "Usted puede participar en las tres formas. Puede votar, puede proponer directamente, y si pertenece a un pueblo indígena, también participa según las normas de su comunidad.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "Cuando usted presenta una propuesta de ley directamente, ¿qué forma de democracia está usando?",
+            "opciones": [
+              "Democracia directa y participativa",
+              "Democracia representativa",
+              "Ninguna, porque eso solo lo hacen las autoridades"
+            ],
+            "correcta": 0,
+            "explicacion": "Correcto. Cuando usted propone directamente, sin intermediarios, está ejerciendo la democracia directa y participativa. La plataforma JOPÓI existe justamente para eso.",
+            "pista": "Piense en la forma donde el pueblo decide por sí mismo, sin intermediarios."
+          },
+          {
+            "tipo": "ordenar",
+            "pregunta": "Ordene las tres formas de democracia tal como aparecieron en la lección.",
+            "pasos": [
+              "Democracia directa y participativa: el pueblo decide por sí mismo",
+              "Democracia representativa: el pueblo elige a quienes deciden",
+              "Democracia comunitaria: los pueblos indígenas eligen según sus normas"
+            ],
+            "explicacion": "Ese es el orden en que la Constitución de Bolivia las nombra. Las tres tienen el mismo valor."
+          }
+        ]
+      },
+      {
+        "id": "dem-3",
+        "titulo": "Participar sin votar: lo que usted puede hacer hoy",
+        "bloques": [
+          "Las elecciones ocurren cada cinco años. Pero las decisiones que afectan su vida se toman todos los días.",
+          "Usted puede pedir información a cualquier institución pública. Ellas tienen el deber de responderle. Eso se llama acceso a la información.",
+          "Usted puede opinar sobre los planes y sobre el presupuesto de su municipio y de su departamento. Eso se llama participación.",
+          "Usted puede vigilar cómo las autoridades usan el dinero público y reclamar si algo está mal. Eso se llama control social.",
+          "Usted puede presentar su propia propuesta de ley. Y usted puede organizarse con otras personas que quieren lo mismo.",
+          "Todo esto está protegido por la Ley número 341 de Participación y Control Social, del año 2013."
+        ],
+        "glosario": [
+          { "palabra": "Control social", "significado": "vigilar y controlar cómo trabajan las autoridades y cómo usan el dinero público" },
+          { "palabra": "Presupuesto", "significado": "el plan que dice en qué se va a gastar el dinero público" }
+        ],
+        "paraMi": "Hoy mismo, sin esperar ninguna elección, usted puede pedir información, opinar sobre el presupuesto de su municipio y presentar una propuesta. Es su derecho, no un favor que le hacen.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "Usted quiere saber cuánto dinero gastó su municipio en rampas para sillas de ruedas. ¿Qué puede hacer?",
+            "opciones": [
+              "Nada, esa información es secreta",
+              "Pedir la información al municipio, que tiene el deber de responderle",
+              "Esperar a las próximas elecciones y votar distinto"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. El acceso a la información pública es un derecho. La institución tiene el deber de responderle, y si no lo hace, usted puede reclamar.",
+            "pista": "Piense en el derecho que vimos sobre pedir información."
+          },
+          {
+            "tipo": "escritura",
+            "pregunta": "Piense en un problema real de su barrio o de su comunidad.",
+            "instruccion": "Escriba o dicte cuál es ese problema, con sus propias palabras. No necesita lenguaje formal. Este texto se guarda solo en su dispositivo y le va a servir en el curso cuatro.",
+            "explicacion": "Guardó su primera idea. En el curso cuatro va a convertir esta idea en una propuesta formal para la Asamblea."
+          }
+        ]
+      },
+      {
+        "id": "dem-4",
+        "titulo": "Su discapacidad no le quita ni un derecho",
+        "bloques": [
+          "Durante mucho tiempo se pensó que las personas con discapacidad no podían participar en política. Eso era falso, y además era injusto.",
+          "Hoy la ley dice lo contrario. La Ley número 223 de Bolivia, del año 2012, garantiza que las personas con discapacidad participen plenamente en la vida política y pública.",
+          "Esa misma ley dice que el Estado debe darle la información pública en formatos que usted pueda usar. Por ejemplo, en braille, en audio, o en texto fácil de entender.",
+          "Si una institución le entrega un documento que usted no puede leer, esa institución no está cumpliendo la ley. Usted puede exigirlo.",
+          "La palabra clave es reciprocidad. Usted no tiene que adaptarse al sistema. El sistema tiene que adaptarse a usted. Eso significa la palabra guaraní jopói: intercambio recíproco."
+        ],
+        "glosario": [
+          { "palabra": "Reciprocidad", "significado": "dar y recibir en dos direcciones, en igualdad" },
+          { "palabra": "Formato accesible", "significado": "una forma de presentar la información que usted sí puede usar, como braille, audio o lectura fácil" }
+        ],
+        "paraMi": "Si le entregan una ley en un papel escaneado que su lector de pantalla no puede leer, eso no es un problema suyo: es un incumplimiento de la institución, y usted puede reclamarlo citando la Ley 223.",
+        "actividades": [
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "Si una institución pública le entrega información en un formato que usted no puede usar, esa institución está incumpliendo la ley.",
+            "correcta": 0,
+            "explicacion": "Es verdadero. La Ley 223 obliga a entregar la información pública en formatos accesibles. Pedirlo no es pedir un favor: es exigir el cumplimiento de una ley.",
+            "pista": "Recuerde lo que dice la Ley 223 sobre los formatos."
+          },
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Qué significa la palabra guaraní jopói?",
+            "opciones": [
+              "Ayuda a los que menos tienen",
+              "Intercambio recíproco: dar y recibir en igualdad",
+              "Asamblea de personas"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. Jopói significa intercambio recíproco. No es caridad en una sola dirección: son dos manos abiertas, en igualdad.",
+            "pista": "Piense en dos manos abiertas que dan y reciben."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curso-asamblea",
+    "titulo": "La Asamblea Legislativa Departamental de Santa Cruz",
+    "insignia": "Conocedora o conocedor de su Asamblea",
+    "resumen": "Conozca qué es la Asamblea de su departamento, quiénes la forman, qué puede y qué no puede hacer, y por qué es la puerta más cercana que usted tiene al poder público.",
+    "objetivos": [
+      "Explicar qué es la Asamblea Legislativa Departamental y para qué sirve.",
+      "Decir cuántos asambleístas tiene Santa Cruz y cómo son elegidos.",
+      "Diferenciar una ley nacional de una ley departamental."
+    ],
+    "lecciones": [
+      {
+        "id": "asa-1",
+        "titulo": "Qué es la Asamblea Legislativa Departamental",
+        "bloques": [
+          "Bolivia tiene nueve departamentos. Santa Cruz es uno de ellos.",
+          "Cada departamento tiene su propio gobierno, que se llama Gobierno Autónomo Departamental. Ese gobierno tiene dos partes.",
+          "La primera parte es el Órgano Ejecutivo. Lo dirige la Gobernadora o el Gobernador. Se encarga de ejecutar, es decir, de hacer las obras y los servicios.",
+          "La segunda parte es la Asamblea Legislativa Departamental. Es un grupo de personas elegidas por el pueblo que hacen tres cosas: crear leyes departamentales, debatir los asuntos del departamento y fiscalizar al Gobernador.",
+          "Fiscalizar quiere decir vigilar y pedir explicaciones. La Asamblea puede llamar a las autoridades para que expliquen qué hicieron con el dinero del departamento."
+        ],
+        "glosario": [
+          { "palabra": "Fiscalizar", "significado": "vigilar el trabajo de las autoridades y pedirles explicaciones" },
+          { "palabra": "Órgano Ejecutivo", "significado": "la parte del gobierno que hace las obras y presta los servicios" }
+        ],
+        "paraMi": "La Asamblea Departamental está en su departamento, no en La Paz. Es la puerta al poder público que usted tiene más cerca, y sus leyes afectan su vida diaria: el transporte, los caminos, la salud departamental.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Cuáles son las tres funciones principales de la Asamblea Legislativa Departamental?",
+            "opciones": [
+              "Construir obras, cobrar impuestos y dar empleo",
+              "Crear leyes departamentales, deliberar y fiscalizar",
+              "Elegir al Presidente, hacer la Constitución y juzgar delitos"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. La Asamblea legisla, delibera y fiscaliza. Construir obras es tarea del Órgano Ejecutivo, que dirige el Gobernador.",
+            "pista": "Recuerde que legislar es hacer leyes y fiscalizar es vigilar."
+          },
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "La Asamblea Legislativa Departamental puede pedirle explicaciones al Gobernador sobre el uso del dinero público.",
+            "correcta": 0,
+            "explicacion": "Es verdadero. Eso se llama fiscalizar, y es una de sus tres funciones principales.",
+            "pista": "Piense en la palabra fiscalizar."
+          }
+        ]
+      },
+      {
+        "id": "asa-2",
+        "titulo": "Quiénes forman la Asamblea de Santa Cruz",
+        "bloques": [
+          "La Asamblea Legislativa Departamental de Santa Cruz tiene veintiocho asambleístas.",
+          "Quince de ellos son asambleístas territoriales. Representan a las provincias: hay uno por cada una de las quince provincias del departamento.",
+          "Ocho son asambleístas poblacionales. Se eligen según la cantidad de población, en una votación por listas en todo el departamento.",
+          "Cinco son asambleístas indígenas. Los eligen las naciones indígenas del departamento según sus propias normas y procedimientos, sin partidos políticos. Son los pueblos ayoreo, chiquitano, guaraní, guarayo y yuracaré mojeño.",
+          "Todos duran cinco años en el cargo.",
+          "Esa mezcla no es casual. Está pensada para que en la Asamblea haya voces del territorio, voces de la población y voces de los pueblos indígenas."
+        ],
+        "glosario": [
+          { "palabra": "Asambleísta", "significado": "persona elegida para formar parte de la Asamblea y crear leyes" },
+          { "palabra": "Territorial", "significado": "que representa a un territorio, en este caso a una provincia" }
+        ],
+        "paraMi": "Uno de esos veintiocho asambleístas representa a la provincia donde usted vive. Puede buscar su nombre y escribirle: representarlo a usted es literalmente su trabajo.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Cuántos asambleístas tiene la Asamblea Legislativa Departamental de Santa Cruz?",
+            "opciones": ["Quince", "Veintiocho", "Ciento treinta"],
+            "correcta": 1,
+            "explicacion": "Correcto. Son veintiocho: quince territoriales, ocho poblacionales y cinco indígenas. Los ciento treinta son los diputados del nivel nacional, que es otra cosa.",
+            "pista": "Sume quince más ocho más cinco."
+          },
+          {
+            "tipo": "opciones",
+            "pregunta": "Los cinco asambleístas indígenas de Santa Cruz son elegidos por partidos políticos.",
+            "opciones": [
+              "Verdadero, como todos los demás",
+              "Falso: los eligen las naciones indígenas según sus propias normas"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. Se eligen por normas y procedimientos propios de cada pueblo, sin partidos políticos. Eso es la democracia comunitaria que vimos en el curso uno.",
+            "pista": "Recuerde la tercera forma de democracia del curso uno."
+          }
+        ]
+      },
+      {
+        "id": "asa-3",
+        "titulo": "Qué puede y qué no puede hacer la Asamblea",
+        "bloques": [
+          "La Asamblea Departamental no puede legislar sobre cualquier tema. Solo puede hacerlo sobre las competencias del departamento.",
+          "Competencia quiere decir el permiso legal para decidir sobre un tema.",
+          "Hay temas que son del nivel nacional. Por ejemplo, el código penal, la moneda o las relaciones con otros países. Esos no los decide la Asamblea Departamental.",
+          "Hay temas que son departamentales. Por ejemplo, los caminos departamentales, la planificación del departamento, el turismo, y programas de desarrollo dentro del departamento.",
+          "Y hay temas que son municipales. Por ejemplo, el aseo urbano o los mercados de la ciudad. Esos los decide el Concejo Municipal.",
+          "Saber esto es muy útil. Si usted lleva su propuesta al lugar equivocado, va a perder tiempo. Si la lleva al lugar correcto, tiene una posibilidad real."
+        ],
+        "glosario": [
+          { "palabra": "Competencia", "significado": "el permiso legal que tiene una institución para decidir sobre un tema" },
+          { "palabra": "Concejo Municipal", "significado": "el grupo de concejales que hace las normas de un municipio" }
+        ],
+        "paraMi": "Antes de enviar su propuesta, pregúntese: este tema, ¿es nacional, departamental o municipal? La respuesta le dice a qué puerta tocar. Si no está seguro, puede preguntarle a JOPOBOT.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "Usted quiere proponer que los micros del transporte público de su ciudad tengan rampa. ¿A qué nivel corresponde principalmente esa decisión?",
+            "opciones": [
+              "Al nivel municipal, porque el transporte urbano es del municipio",
+              "Al nivel nacional, porque afecta a todo el país",
+              "A ningún nivel, porque eso no se puede pedir"
+            ],
+            "correcta": 0,
+            "explicacion": "El transporte dentro de la ciudad es competencia municipal. Aun así, el departamento puede aprobar normas de accesibilidad en el transporte departamental, entre municipios. Por eso conviene revisar bien a qué nivel corresponde cada parte de su propuesta.",
+            "pista": "Piense si el micro circula dentro de la ciudad o entre municipios."
+          },
+          {
+            "tipo": "ordenar",
+            "pregunta": "Ordene los tres niveles de gobierno, del más grande al más cercano a su barrio.",
+            "pasos": [
+              "Nivel nacional: el Estado Plurinacional de Bolivia",
+              "Nivel departamental: el Gobierno Autónomo de Santa Cruz",
+              "Nivel municipal: su municipio"
+            ],
+            "explicacion": "Del más amplio al más cercano: nacional, departamental y municipal. Cada uno tiene sus propias competencias."
+          }
+        ]
+      },
+      {
+        "id": "asa-4",
+        "titulo": "El Estatuto Autonómico: la regla mayor del departamento",
+        "bloques": [
+          "Cada departamento con autonomía tiene un documento que organiza su gobierno. Se llama Estatuto Autonómico.",
+          "El Estatuto de Santa Cruz tiene una historia larga. Fue aprobado en un referendo en el año dos mil ocho.",
+          "Pero en el año dos mil nueve Bolivia aprobó una nueva Constitución, y el Estatuto tuvo que adecuarse a ella. Ese proceso tomó años.",
+          "El Tribunal Constitucional Plurinacional revisó el Estatuto y declaró que varios artículos no coincidían con la Constitución. Hubo que corregirlos.",
+          "Finalmente, el Estatuto Autonómico de Santa Cruz entró en vigencia el veintinueve de enero del año dos mil dieciocho.",
+          "Ese documento define cuántos asambleístas hay, cómo se eligen y cómo se aprueban las leyes departamentales."
+        ],
+        "glosario": [
+          { "palabra": "Estatuto Autonómico", "significado": "el documento que organiza el gobierno de un departamento" },
+          { "palabra": "Tribunal Constitucional Plurinacional", "significado": "el tribunal que revisa si las normas respetan la Constitución" }
+        ],
+        "paraMi": "El Estatuto es la regla mayor de su departamento. Si alguna vez quiere saber exactamente cómo funciona la Asamblea, ese es el documento que hay que leer, y usted tiene derecho a pedirlo en formato accesible.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Qué es el Estatuto Autonómico de Santa Cruz?",
+            "opciones": [
+              "Una ley que hizo el Presidente para el departamento",
+              "El documento que organiza el gobierno del departamento",
+              "Un acuerdo entre partidos políticos"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. Es el documento que organiza el gobierno departamental: define la Asamblea, el número de asambleístas y cómo se aprueban las leyes.",
+            "pista": "Piense en un documento que organiza cómo funciona el departamento."
+          },
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "El Estatuto Autonómico de Santa Cruz entró en vigencia inmediatamente después del referendo de dos mil ocho.",
+            "correcta": 1,
+            "explicacion": "Es falso. Después del referendo tuvo que adecuarse a la Constitución de dos mil nueve, y recién entró en vigencia en enero de dos mil dieciocho.",
+            "pista": "Recuerde que hubo una revisión del Tribunal Constitucional en el medio."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curso-proceso",
+    "titulo": "Cómo nace una ley: el proceso legislativo paso a paso",
+    "insignia": "Guía del camino de las leyes",
+    "resumen": "Siga el camino completo de una ley departamental, desde que alguien tiene la idea hasta que la ley se publica y empieza a cumplirse. Y descubra en qué momentos usted puede intervenir.",
+    "objetivos": [
+      "Ordenar las etapas por las que pasa una ley departamental.",
+      "Identificar quiénes pueden presentar un proyecto de ley.",
+      "Reconocer en qué momentos del proceso usted puede hacerse escuchar."
+    ],
+    "lecciones": [
+      {
+        "id": "pro-1",
+        "titulo": "Todo empieza con una idea y una firma",
+        "bloques": [
+          "Una ley no nace en un edificio. Nace cuando alguien ve un problema y piensa que una norma puede resolverlo.",
+          "Ese primer paso se llama iniciativa legislativa. Es el derecho de presentar formalmente un proyecto de ley.",
+          "En Santa Cruz pueden presentar proyectos de ley departamental las asambleístas y los asambleístas, el Gobernador o la Gobernadora, los subgobernadores, los gobiernos municipales, y también la ciudadanía.",
+          "Sí, la ciudadanía. El Estatuto Autonómico reconoce la iniciativa legislativa ciudadana como un derecho de las cruceñas y los cruceños.",
+          "Esa iniciativa ciudadana tiene requisitos y está reglamentada por una ley departamental. Antes de presentar su proyecto conviene confirmar los requisitos vigentes directamente con la Asamblea.",
+          "Aunque usted no reúna todos los requisitos formales, siempre puede enviar su propuesta a un asambleísta para que él o ella la presente. Muchas leyes nacieron así."
+        ],
+        "glosario": [
+          { "palabra": "Iniciativa legislativa", "significado": "el derecho de presentar formalmente un proyecto de ley" },
+          { "palabra": "Proyecto de ley", "significado": "una propuesta escrita que todavía no es ley, y que se pone a consideración" }
+        ],
+        "paraMi": "Usted puede empezar el camino de una ley. La idea que escribió en el curso uno puede convertirse en un proyecto real, presentado por usted o por un asambleísta que decida apoyarla.",
+        "actividades": [
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "En Santa Cruz, solo las autoridades pueden presentar un proyecto de ley departamental.",
+            "correcta": 1,
+            "explicacion": "Es falso. El Estatuto Autonómico reconoce también la iniciativa legislativa ciudadana. Y además, siempre puede pedirle a un asambleísta que presente su propuesta.",
+            "pista": "Recuerde quiénes aparecieron en la lista de la lección."
+          },
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Cómo se llama el derecho de presentar formalmente un proyecto de ley?",
+            "opciones": ["Fiscalización", "Iniciativa legislativa", "Control social"],
+            "correcta": 1,
+            "explicacion": "Correcto. Se llama iniciativa legislativa. Fiscalizar es vigilar, y el control social es el derecho de vigilar el uso del dinero público.",
+            "pista": "Es la palabra que significa empezar algo."
+          }
+        ]
+      },
+      {
+        "id": "pro-2",
+        "titulo": "Las comisiones: donde el proyecto se estudia",
+        "bloques": [
+          "Cuando un proyecto llega a la Asamblea, no se vota de inmediato. Primero se estudia.",
+          "El proyecto se envía a una comisión. Una comisión es un grupo pequeño de asambleístas que se especializa en un tema.",
+          "Por ejemplo, hay comisiones de desarrollo social, de tierra y territorio, de economía. Cada proyecto va a la comisión que corresponde a su tema.",
+          "La comisión revisa el proyecto, pide informes, puede invitar a personas para que opinen, y luego emite un informe o dictamen.",
+          "Este momento es muy importante para usted. Es aquí donde las organizaciones de la sociedad civil pueden pedir ser escuchadas.",
+          "Si su propuesta llega a una comisión, usted puede solicitar audiencia para explicarla con su propia voz."
+        ],
+        "glosario": [
+          { "palabra": "Comisión", "significado": "grupo pequeño de asambleístas que estudia los proyectos de un tema" },
+          { "palabra": "Dictamen", "significado": "la opinión escrita y oficial que emite una comisión sobre un proyecto" }
+        ],
+        "paraMi": "La comisión es la puerta donde su voz puede entrar. Pedir audiencia en comisión no requiere ser político: requiere saber que ese derecho existe. Ahora usted ya lo sabe.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Cuál es el momento del proceso donde una persona de la comunidad tiene más posibilidad de ser escuchada en persona?",
+            "opciones": [
+              "Cuando el proyecto se estudia en comisión",
+              "Cuando el Gobernador promulga la ley",
+              "Cuando la ley se publica en la Gaceta"
+            ],
+            "correcta": 0,
+            "explicacion": "Correcto. En comisión se puede pedir audiencia y explicar la propuesta con su propia voz. Después de la promulgación, la ley ya está decidida.",
+            "pista": "Piense en el momento donde el proyecto todavía se está estudiando."
+          },
+          {
+            "tipo": "escritura",
+            "pregunta": "Imagine que le dan cinco minutos en una comisión para defender su propuesta.",
+            "instruccion": "Escriba o dicte las tres frases más importantes que diría. Recuerde: el problema, su propuesta y a quiénes beneficia.",
+            "explicacion": "Practicó lo más difícil de la incidencia: decir mucho en poco tiempo. Guarde estas frases, le van a servir de verdad."
+          }
+        ]
+      },
+      {
+        "id": "pro-3",
+        "titulo": "El debate: en grande y en detalle",
+        "bloques": [
+          "Después del trabajo de la comisión, el proyecto llega al pleno. El pleno es la reunión de todas las asambleístas y todos los asambleístas.",
+          "Ahí el proyecto se trata de dos maneras. Primero en grande y después en detalle.",
+          "Tratar en grande quiere decir discutir la idea general: si el proyecto sirve o no sirve, si vale la pena o no.",
+          "Tratar en detalle quiere decir revisar artículo por artículo. Se puede cambiar la redacción, agregar cosas o quitar cosas.",
+          "Para que la sesión sea válida se necesita quórum. Quórum quiere decir la cantidad mínima de asambleístas presentes.",
+          "Si el proyecto se aprueba en grande y en detalle, pasa a la siguiente etapa. Si no se aprueba, el proyecto se archiva, aunque puede volver a presentarse más adelante."
+        ],
+        "glosario": [
+          { "palabra": "Pleno", "significado": "la reunión de todas las personas que forman la Asamblea" },
+          { "palabra": "Quórum", "significado": "la cantidad mínima de personas presentes para que una reunión sea válida" },
+          { "palabra": "Archivar", "significado": "guardar un proyecto sin aprobarlo, por ahora" }
+        ],
+        "paraMi": "Que su proyecto se archive no es el final. Muchas leyes se presentaron dos o tres veces antes de aprobarse. La insistencia también es una herramienta democrática.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Qué diferencia hay entre tratar un proyecto en grande y tratarlo en detalle?",
+            "opciones": [
+              "En grande se discute la idea general, en detalle se revisa artículo por artículo",
+              "En grande lo ve el Gobernador, en detalle lo ve la Asamblea",
+              "No hay diferencia, son dos nombres de lo mismo"
+            ],
+            "correcta": 0,
+            "explicacion": "Correcto. Primero se decide si la idea sirve, y después se revisa el texto artículo por artículo.",
+            "pista": "Una parte mira el bosque completo, la otra mira árbol por árbol."
+          },
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "Si un proyecto de ley se archiva, ya nunca más se puede volver a presentar.",
+            "correcta": 1,
+            "explicacion": "Es falso. Un proyecto archivado puede volver a presentarse más adelante, mejorado o con más apoyo. La insistencia es parte del trabajo democrático.",
+            "pista": "Piense en lo que dice la lección sobre volver a presentar."
+          }
+        ]
+      },
+      {
+        "id": "pro-4",
+        "titulo": "Promulgación y publicación: cuando la ley empieza a existir",
+        "bloques": [
+          "Cuando la Asamblea aprueba un proyecto, este se envía al Órgano Ejecutivo departamental.",
+          "El Gobernador o la Gobernadora debe promulgarlo. Promulgar quiere decir declarar oficialmente que ese texto ya es ley.",
+          "Según el Estatuto de Santa Cruz, tiene un plazo de quince días para hacerlo. Si no promulga en ese plazo, la promulga la Presidencia de la Asamblea.",
+          "Después de la promulgación viene la publicación en la Gaceta Oficial del Departamento.",
+          "La Gaceta Oficial es el registro donde se publican las normas. Una ley que no se publica no puede aplicarse: la publicación es lo que la hace exigible.",
+          "Desde ese momento, la ley existe para todo el mundo y usted puede exigir que se cumpla."
+        ],
+        "glosario": [
+          { "palabra": "Promulgar", "significado": "declarar oficialmente que un texto aprobado ya es ley" },
+          { "palabra": "Gaceta Oficial", "significado": "el registro público donde se publican las leyes para que todos las conozcan" }
+        ],
+        "paraMi": "Cuando una ley se publica, usted gana una herramienta: puede citarla por su número y su fecha para exigir que se cumpla. Eso es exactamente lo que hace JOPÓI al pie de cada documento.",
+        "actividades": [
+          {
+            "tipo": "ordenar",
+            "pregunta": "Ordene el camino completo de una ley departamental, desde el inicio hasta el final.",
+            "pasos": [
+              "Alguien presenta el proyecto de ley (iniciativa legislativa)",
+              "Una comisión estudia el proyecto y emite su dictamen",
+              "El pleno lo trata en grande y en detalle, y lo aprueba",
+              "El Gobernador lo promulga",
+              "Se publica en la Gaceta Oficial del Departamento y entra en vigencia"
+            ],
+            "explicacion": "Ese es el camino completo. Y usted puede intervenir en los dos primeros pasos: proponiendo, y pidiendo audiencia en comisión."
+          },
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Por qué es importante que una ley se publique en la Gaceta Oficial?",
+            "opciones": [
+              "Porque así todos pueden conocerla y recién ahí se puede exigir su cumplimiento",
+              "Porque es una tradición antigua sin efecto legal",
+              "Porque el Gobernador necesita una copia impresa"
+            ],
+            "correcta": 0,
+            "explicacion": "Correcto. La publicación es lo que hace que la ley sea conocible y exigible. Sin publicación, no se puede aplicar.",
+            "pista": "Piense en qué pasa si nadie sabe que una ley existe."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "curso-derechos",
+    "titulo": "Sus derechos en el mundo y cómo redactar su propuesta",
+    "insignia": "Redactora o redactor de propuestas ciudadanas",
+    "resumen": "Conozca los derechos que la comunidad internacional le reconoce, y aprenda paso a paso a convertir su idea en una propuesta formal que una institución tenga que recibir.",
+    "objetivos": [
+      "Nombrar la Convención de la ONU y al menos dos de sus artículos que lo protegen.",
+      "Escribir las cinco partes de una propuesta ciudadana.",
+      "Enviar su propia propuesta a la institución que corresponde."
+    ],
+    "lecciones": [
+      {
+        "id": "der-1",
+        "titulo": "La Convención de la ONU: sus derechos en el mundo",
+        "bloques": [
+          "En el año dos mil seis, las Naciones Unidas aprobaron un tratado internacional muy importante: la Convención sobre los Derechos de las Personas con Discapacidad.",
+          "Bolivia firmó y ratificó esa Convención. Eso significa que en Bolivia tiene fuerza de ley.",
+          "La Convención cambió una idea antigua. Antes se pensaba que la discapacidad era un problema médico de la persona. La Convención dice que las barreras están en el entorno, no en la persona.",
+          "Tres artículos le sirven especialmente a usted. El artículo nueve habla de accesibilidad: todo lo público debe poder usarse.",
+          "El artículo veintiuno habla de libertad de expresión y acceso a la información: usted tiene derecho a recibir la información en formatos accesibles y en el modo de comunicación que usted elija.",
+          "El artículo veintinueve habla de participación política: usted tiene derecho a votar, a ser elegido y a participar en los asuntos públicos, con los apoyos que necesite."
+        ],
+        "glosario": [
+          { "palabra": "Convención", "significado": "un acuerdo entre muchos países que crea obligaciones para ellos" },
+          { "palabra": "Ratificar", "significado": "cuando un país acepta oficialmente un tratado y se obliga a cumplirlo" }
+        ],
+        "paraMi": "Cuando usted reclama accesibilidad, no está reclamando en nombre propio nada más: está invocando un tratado internacional que Bolivia se comprometió a cumplir ante el mundo.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "Según la Convención de la ONU, ¿dónde están las barreras que enfrenta una persona con discapacidad?",
+            "opciones": [
+              "En el cuerpo de la persona, que debe curarse",
+              "En el entorno, que debe cambiar para incluirla",
+              "En ningún lado, porque las barreras no existen"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. Ese es el cambio central de la Convención: el problema no es la persona, es el entorno que no está adaptado. Por eso el sistema es el que debe cambiar.",
+            "pista": "Recuerde el cambio de idea del que habla la lección."
+          },
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Qué artículo de la Convención protege su derecho a participar en política?",
+            "opciones": ["El artículo nueve", "El artículo veintiuno", "El artículo veintinueve"],
+            "correcta": 2,
+            "explicacion": "Correcto. El artículo veintinueve es el de participación política: votar, ser elegido y participar en los asuntos públicos con los apoyos necesarios.",
+            "pista": "Es el último de los tres que vimos."
+          }
+        ]
+      },
+      {
+        "id": "der-2",
+        "titulo": "Sus tres leyes bolivianas de bolsillo",
+        "bloques": [
+          "Además de la Convención, en Bolivia hay tres leyes que conviene que usted recuerde. Son sus leyes de bolsillo.",
+          "La primera es la Ley número doscientos veintitrés, del año dos mil doce. Es la Ley General para Personas con Discapacidad. Garantiza sus derechos en igualdad de condiciones, incluida la información en formatos accesibles.",
+          "La segunda es la Ley número trescientos cuarenta y uno, del año dos mil trece. Es la Ley de Participación y Control Social. Garantiza su derecho a participar, a pedir información y a presentar propuestas normativas.",
+          "La tercera es la Ley número trescientos cuarenta y dos, también del año dos mil trece. Es la Ley de la Juventud. Reconoce como joven a toda persona entre dieciséis y veintiocho años, y garantiza su participación política.",
+          "Citar una ley por su número y su año cambia el tono de cualquier pedido. Deja de ser un ruego y se convierte en una exigencia fundamentada.",
+          "En JOPÓI, al final de cada documento aparecen las leyes que respaldan su derecho a esa información."
+        ],
+        "glosario": [
+          { "palabra": "Fundamentar", "significado": "explicar en qué norma o razón se apoya lo que usted pide" }
+        ],
+        "paraMi": "Si tiene entre dieciséis y veintiocho años y una discapacidad, las tres leyes lo protegen al mismo tiempo. Puede citarlas juntas: sus derechos se suman, no se restan.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "Usted quiere exigir que la Asamblea publique sus leyes en formato accesible. ¿Qué ley boliviana cita primero?",
+            "opciones": [
+              "La Ley 223, Ley General para Personas con Discapacidad",
+              "La Ley 342, Ley de la Juventud",
+              "Ninguna, porque eso no está en ninguna ley"
+            ],
+            "correcta": 0,
+            "explicacion": "Correcto. La Ley 223 es la que obliga a entregar la información pública en formatos accesibles como braille, audio y lectura fácil.",
+            "pista": "Es la ley de discapacidad, del año dos mil doce."
+          },
+          {
+            "tipo": "ordenar",
+            "pregunta": "Ordene sus tres leyes de bolsillo por número, de menor a mayor.",
+            "pasos": [
+              "Ley 223: personas con discapacidad",
+              "Ley 341: participación y control social",
+              "Ley 342: juventud"
+            ],
+            "explicacion": "Doscientos veintitrés, trescientos cuarenta y uno y trescientos cuarenta y dos. Vale la pena memorizar los tres números: son sus herramientas."
+          }
+        ]
+      },
+      {
+        "id": "der-3",
+        "titulo": "Las cinco partes de una propuesta que sí se lee",
+        "bloques": [
+          "Una propuesta ciudadana no necesita lenguaje de abogado. Necesita claridad y estructura.",
+          "Toda buena propuesta tiene cinco partes. La primera es quién es usted: su nombre y su comunidad. Sin eso, la institución no sabe a quién responder.",
+          "La segunda parte es el problema. Cuente qué pasa, con sus palabras, y si puede, con un ejemplo concreto que usted haya vivido o visto.",
+          "La tercera parte es su propuesta: qué debería hacerse para resolver el problema.",
+          "La cuarta parte es a quiénes beneficia. Mientras más personas se beneficien, más peso tiene su propuesta.",
+          "La quinta parte es el pedido concreto. Aquí usted dice exactamente qué le pide a la institución: que apruebe una norma, que destine presupuesto, que responda un informe.",
+          "Sin pedido concreto, una propuesta se queda en queja. Con pedido concreto, se convierte en algo que la institución debe responder."
+        ],
+        "glosario": [
+          { "palabra": "Pedido concreto", "significado": "decir exactamente qué acción quiere usted que la institución realice" }
+        ],
+        "paraMi": "El módulo Escribir mi propuesta de JOPÓI está construido con estas cinco partes, una por pantalla, con micrófono en cada campo. Usted responde y la plataforma arma el documento formal.",
+        "actividades": [
+          {
+            "tipo": "ordenar",
+            "pregunta": "Ordene las cinco partes de una propuesta ciudadana.",
+            "pasos": [
+              "Quién es usted: nombre y comunidad",
+              "El problema: qué pasa, con un ejemplo concreto",
+              "Su propuesta: qué debería hacerse",
+              "A quiénes beneficia",
+              "El pedido concreto a la institución"
+            ],
+            "explicacion": "Ese es el orden exacto del módulo Escribir mi propuesta de JOPÓI. Primero quién habla, después el problema, la solución, los beneficiados y el pedido."
+          },
+          {
+            "tipo": "opciones",
+            "pregunta": "¿Qué diferencia una propuesta de una queja?",
+            "opciones": [
+              "Que la propuesta usa palabras difíciles",
+              "Que la propuesta incluye un pedido concreto de acción",
+              "Que la queja se escribe a mano"
+            ],
+            "correcta": 1,
+            "explicacion": "Correcto. La queja describe un malestar. La propuesta pide una acción concreta que la institución debe responder.",
+            "pista": "Piense en la quinta parte de la propuesta."
+          }
+        ]
+      },
+      {
+        "id": "der-4",
+        "titulo": "Escriba su propuesta ahora",
+        "bloques": [
+          "Llegó el momento de usar todo lo aprendido. Vamos a escribir su propuesta, parte por parte.",
+          "Recuerde la idea que escribió en el curso uno, cuando le pedimos pensar en un problema de su barrio o de su comunidad.",
+          "Escriba con sus palabras. No copie lenguaje legal que no entiende. Una propuesta clara convence más que una propuesta complicada.",
+          "Si le cuesta empezar, use el micrófono y hable como si le estuviera contando el problema a una amiga o a un amigo. Después ordena.",
+          "Cuando termine las actividades de esta lección, tendrá el borrador completo de su propuesta."
+        ],
+        "glosario": [
+          { "palabra": "Borrador", "significado": "una primera versión de un texto, que todavía se puede mejorar" }
+        ],
+        "paraMi": "Al terminar esta lección usted no tendrá solo conocimiento: tendrá un documento propio, listo para pasar al módulo de propuestas y enviarlo de verdad.",
+        "actividades": [
+          {
+            "tipo": "escritura",
+            "pregunta": "Parte uno y dos: quién es usted y cuál es el problema.",
+            "instruccion": "Escriba o dicte su nombre, su barrio o comunidad, y después cuente el problema con un ejemplo concreto que usted haya vivido o visto.",
+            "explicacion": "Ya tiene las dos primeras partes. Un ejemplo concreto vale más que diez frases generales."
+          },
+          {
+            "tipo": "escritura",
+            "pregunta": "Parte tres y cuatro: su propuesta y a quiénes beneficia.",
+            "instruccion": "Escriba o dicte qué debería hacerse para resolver ese problema, y después diga a qué personas ayudaría.",
+            "explicacion": "Ya tiene el corazón de su propuesta. Nombrar a los beneficiados le da peso político a su pedido."
+          },
+          {
+            "tipo": "escritura",
+            "pregunta": "Parte cinco: el pedido concreto.",
+            "instruccion": "Escriba o dicte exactamente qué le pide a la institución. Empiece con las palabras: Solicito que...",
+            "explicacion": "Con esto su propuesta está completa. Ahora puede pasarla al módulo Escribir mi propuesta para generar el documento formal y enviarlo."
+          }
+        ]
+      },
+      {
+        "id": "der-5",
+        "titulo": "Enviar, hacer seguimiento y no soltar",
+        "bloques": [
+          "Enviar la propuesta no es el final del trabajo. Es el comienzo del seguimiento.",
+          "Primero, guarde siempre una copia de lo que envió, con la fecha. En JOPÓI puede descargarla como texto o en braille.",
+          "Segundo, si la envió por correo, guarde el correo enviado. Si la entregó en papel, pida una copia sellada con la fecha de recepción.",
+          "Tercero, tiene derecho a pedir respuesta. Puede volver a escribir citando la fecha de su envío y la Ley 341 de Participación y Control Social.",
+          "Cuarto, no vaya sola ni solo si puede evitarlo. Una propuesta firmada por varias personas u organizaciones pesa mucho más que una sola firma.",
+          "Y quinto, tenga paciencia estratégica. Los procesos legislativos son lentos por diseño. Que sea lento no significa que sea imposible.",
+          "Usted terminó la Escuela Cívica. Ahora sabe qué es la democracia, cómo funciona su Asamblea, cómo nace una ley, cuáles son sus derechos y cómo redactar una propuesta. Eso ya no se lo quita nadie."
+        ],
+        "glosario": [
+          { "palabra": "Seguimiento", "significado": "revisar qué pasó con algo que usted presentó, y volver a preguntar" },
+          { "palabra": "Copia sellada", "significado": "una copia de su documento con la marca y la fecha de la institución que lo recibió" }
+        ],
+        "paraMi": "Su copia sellada con fecha es su herramienta más poderosa para el seguimiento: con ella puede preguntar, reclamar y demostrar que usted cumplió su parte.",
+        "actividades": [
+          {
+            "tipo": "opciones",
+            "pregunta": "Usted entregó su propuesta en papel en la Asamblea. ¿Qué debe pedir siempre?",
+            "opciones": [
+              "Una copia sellada con la fecha de recepción",
+              "El número de teléfono de un asambleísta",
+              "Nada, la institución se encarga de todo"
+            ],
+            "correcta": 0,
+            "explicacion": "Correcto. La copia sellada con fecha es la prueba de que usted presentó su propuesta, y le sirve para hacer seguimiento y para reclamar respuesta.",
+            "pista": "Piense en qué prueba que usted entregó algo."
+          },
+          {
+            "tipo": "verdadero-falso",
+            "pregunta": "Una propuesta firmada por varias personas u organizaciones tiene más peso que una sola firma.",
+            "correcta": 0,
+            "explicacion": "Es verdadero. La organización colectiva es una de las herramientas más potentes de la democracia. Busque a otras personas a quienes les afecte el mismo problema.",
+            "pista": "Recuerde el cuarto consejo de la lección."
+          }
+        ]
+      }
+    ]
+  }
+]

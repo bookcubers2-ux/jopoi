@@ -510,3 +510,156 @@ ol.camino-ley li[aria-current="step"] {
 
 /* Frases para empezar (módulo de propuestas) */
 .frases-iniciadoras { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.5rem 0 1rem; }
+
+/* ------------------------------------------------------------------ */
+/* ESCUELA CÍVICA                                                      */
+/* Sin color como único indicador de estado: todo lleva texto o borde. */
+/* ------------------------------------------------------------------ */
+
+.metodologia {
+  border: 3px solid var(--tinta);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+}
+.metodologia h2 { margin-top: 0; }
+
+/* Marcador de puntos y avance */
+#marcador-escuela {
+  border: 4px double var(--tinta);
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.marcador-cifras { font-size: 1.1rem; margin-bottom: 0.6rem; }
+.barra-avance {
+  border: 3px solid var(--tinta);
+  height: 1.6rem;
+  width: 100%;
+  max-width: 30rem;
+}
+.barra-avance-relleno {
+  background: var(--tinta);
+  height: 100%;
+}
+.lista-insignias { list-style: none; padding: 0; margin-top: 0.8rem; }
+.lista-insignias .insignia {
+  border: 3px solid var(--tinta);
+  padding: 0.4rem 0.8rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+/* Migas de pan: dónde está la persona */
+nav.migas ol {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+nav.migas li { margin-bottom: 0; }
+nav.migas li + li::before { content: "› "; font-weight: 700; }
+nav.migas li[aria-current="page"] { font-weight: 800; }
+.enlace-migas { min-height: 40px; padding: 0.3rem 0.7rem; font-size: 0.95rem; }
+
+/* Lista de cursos */
+.lista-cursos { list-style: none; padding: 0; }
+.lista-cursos > li { margin-bottom: 1.25rem; }
+.tarjeta-curso {
+  border: 3px solid var(--tinta);
+  padding: 1.1rem 1.25rem;
+}
+.tarjeta-curso h3 { margin-top: 0; }
+.tarjeta-curso h3 button {
+  font-size: 1.15rem;
+  text-align: left;
+  width: 100%;
+}
+.estado-curso { font-weight: 700; margin-bottom: 0; }
+
+/* Lista de lecciones */
+.lista-lecciones { list-style: none; padding: 0; }
+.lista-lecciones > li { margin-bottom: 0.75rem; }
+.lista-lecciones button {
+  width: 100%;
+  text-align: left;
+  color: var(--tinta);
+  background: var(--papel);
+}
+.lista-lecciones button.leccion-hecha {
+  background: var(--tinta);
+  color: var(--papel);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+
+/* Contenido de la lección */
+.cuerpo-leccion { margin: 1.25rem 0; }
+.panel-glosario {
+  border: 3px dashed var(--tinta);
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+.panel-glosario h3 { margin-top: 0; }
+
+/* Actividades */
+.actividad {
+  border: 4px double var(--tinta);
+  padding: 1.1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+.actividad h4 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem;
+}
+.pregunta-actividad { font-weight: 700; font-size: 1.05rem; }
+.opciones-actividad {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin: 0.8rem 0;
+}
+.opciones-actividad .opcion { text-align: left; width: 100%; }
+/* Acierto: relleno invertido MÁS subrayado, nunca solo color */
+.opcion-correcta {
+  background: var(--tinta);
+  color: var(--papel);
+  text-decoration: underline;
+  text-underline-offset: 0.3em;
+}
+.respuesta-actividad {
+  font-weight: 700;
+  margin: 0.8rem 0 0;
+  min-height: 1.4em;
+}
+
+/* Ordenar pasos: con botones subir y bajar, jamás arrastrando */
+.lista-ordenar { list-style: decimal; padding-left: 1.8rem; margin: 1rem 0; }
+.lista-ordenar li {
+  border: 3px solid var(--tinta);
+  padding: 0.7rem 0.9rem;
+  margin-bottom: 0.7rem;
+}
+.lista-ordenar .texto-paso { display: block; margin-bottom: 0.5rem; }
+.controles-orden { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.controles-orden button { min-height: 44px; padding: 0.4rem 1rem; }
+
+/* Cierre de la lección */
+.cierre-leccion {
+  border-top: 4px solid var(--tinta);
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+}
+
+/* Certificado */
+.panel-certificado {
+  border: 4px double var(--tinta);
+  padding: 1.25rem;
+  margin: 2rem 0 1.5rem;
+}
+.panel-certificado h3 { margin-top: 0; }
+
+#btn-reiniciar-escuela { margin-top: 1rem; }
