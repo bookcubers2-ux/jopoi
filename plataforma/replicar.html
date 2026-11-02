@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Replicar JOPÓI en su país | JOPÓI</title>
+  <meta name="description" content="Cómo cualquier organización puede lanzar su propia democracia accesible con JOPÓI editando un solo archivo, y el caso de Turkmenistán.">
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="JOPÓI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html"><img src="img/logo.png" alt="" class="logo-marca"><span>JOPÓI</span></a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="tutorial.html">Cómo usar JOPÓI</a></li>
+        <li><a href="escuela.html">Escuela Cívica</a></li>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="jopobot.html">JOPOBOT, su asistente</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Replicar JOPÓI en su región o país</h1>
+    <p>Todo parlamento del mundo publica algo que parte de su ciudadanía no puede leer. JOPÓI fue construido para que cualquier organización lo copie y lance su propia democracia accesible sin pedirnos permiso. Lo que cambia es la tabla braille y el idioma; el método no cambia.</p>
+
+    <h2>Ya ocurrió: Turkmenistán</h2>
+    <p>Antes de que terminara el plan para expandir JOPÓI dentro de Bolivia, un coordinador juvenil de la Conferencia de las Naciones Unidas sobre los Países en Desarrollo Sin Litoral encontró el repositorio por su cuenta y reconstruyó la plataforma alrededor del parlamento de Turkmenistán. Dos países sin litoral, un archivo de configuración. Nunca necesitó nuestra autorización ni que viajáramos. Esa es la prueba de que la versión de JOPÓI que llegue al parlamento número mil será una de la que nunca nos enteraremos.</p>
+
+    <h2>Los seis pasos</h2>
+    <ol>
+      <li><strong>Copie el repositorio.</strong> Haga fork en GitHub o descargue la carpeta <code>plataforma/</code>. No hay base de datos, no hay servidor, no hay compilación.</li>
+      <li><strong>Edite un solo archivo:</strong> <code>plataforma/js/config.js</code>. Allí se define el nombre de la instancia, la región, el parlamento, el idioma, la voz, el correo institucional al que llegan las propuestas y el marco legal de su país.</li>
+      <li><strong>Cargue sus documentos legislativos</strong> en <code>plataforma/data/leyes.json</code>, o deje que la ciudadanía los digitalice con el módulo de reconocimiento de texto.</li>
+      <li><strong>Revise la tabla braille</strong> de su idioma. La que viene es la signografía española de grado 1; el motor está preparado para cambiarla.</li>
+      <li><strong>Traduzca la interfaz</strong> con los diccionarios de <code>plataforma/i18n/</code>. El inglés ya existe como base. Las lenguas originarias se traducen con hablantes de la comunidad, nunca con traducción automática: así está planificado el guaraní.</li>
+      <li><strong>Publique gratis</strong> en GitHub Pages, Netlify o Cloudflare Pages. Listo.</li>
+    </ol>
+    <p>La guía técnica completa está en el repositorio: <a href="https://github.com/bookcubers2-ux/jopoi/blob/main/docs/GUIA-FORK.md">docs/GUIA-FORK.md</a>. Una versión en inglés está en preparación.</p>
+
+    <h2>Lo que no se copia solo</h2>
+    <p>El código se copia en una tarde. Lo que convierte el código en democracia accesible son tres cosas que cada territorio tiene que construir con su propia comunidad:</p>
+    <ul>
+      <li><strong>Las personas:</strong> jóvenes ciegos y neurodivergentes formados como Traductores Cívicos, que producen el servicio y enseñan a la siguiente cohorte.</li>
+      <li><strong>El método de la Sesión Espejo:</strong> una auditoría de accesibilidad dentro de la institución, dirigida por las personas que la institución excluye. En Santa Cruz, sus resultados se convirtieron en ley.</li>
+      <li><strong>El protocolo de salvaguarda,</strong> escrito por la propia comunidad antes de escribir cualquier código.</li>
+    </ul>
+    <p>Para esas tres cosas sí ofrecemos acompañamiento. Si su organización quiere replicar JOPÓI con el método completo, escríbanos. Vea también <a href="licencia.html">qué es libre y qué es marca</a>.</p>
+
+    <h2>Condiciones</h2>
+    <p>El código es MIT: puede usarlo con su propio nombre, para cualquier fin, manteniendo el aviso de licencia. El nombre JOPÓI, el logotipo, los nombres "Sesión Espejo" y "Traductor Cívico" identifican al proyecto de origen y requieren acuerdo escrito para usarse. Nos encantará saber de su réplica, pero no lo necesita.</p>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <nav class="transparencia" aria-label="Transparencia"><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="impacto.html">Impacto</a></li><li><a href="licencia.html">Licencia y marca</a></li><li><a href="privacidad.html">Privacidad</a></li><li><a href="replicar.html">Replicar JOPÓI</a></li><li><a href="partners.html" lang="en">For partners (English)</a></li></ul></nav>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/instalar.js"></script>
+</body>
+</html>

@@ -663,3 +663,18 @@ nav.migas li[aria-current="page"] { font-weight: 800; }
 .panel-certificado h3 { margin-top: 0; }
 
 #btn-reiniciar-escuela { margin-top: 1rem; }
+
+/* ---- Páginas de transparencia (cómo funciona, impacto, licencia, privacidad, replicar, partners) ---- */
+.flujo { margin: 1.5rem 0; }
+.flujo svg { width: 100%; height: auto; max-width: 960px; display: block; }
+.flujo figcaption { font-size: 0.95rem; margin-top: 0.6rem; }
+.tabla-simple { width: 100%; border-collapse: collapse; margin: 1rem 0 1.5rem; font-size: 0.98rem; }
+.tabla-simple caption { text-align: left; font-weight: 700; margin-bottom: 0.4rem; }
+.tabla-simple th, .tabla-simple td { border: 2px solid var(--tinta); padding: 0.55rem 0.6rem; text-align: left; vertical-align: top; }
+.tabla-simple th { background: var(--tinta); color: var(--papel); }
+.cifras { list-style: none; padding: 0; margin: 1rem 0 1.5rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; }
+.cifras li { border: 3px solid var(--tinta); border-radius: 12px; padding: 0.9rem 1rem; }
+.cifra-grande { display: block; font-size: 2.4rem; font-weight: 700; line-height: 1.1; }
+.cifra-texto { display: block; margin-top: 0.3rem; }
+footer.sitio nav.transparencia ul { list-style: none; padding: 0; margin: 0.6rem 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+footer.sitio nav.transparencia a { color: inherit; }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es" data-tema="claro">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacidad y protección de datos | JOPÓI</title>
+  <meta name="description" content="Qué datos trata JOPÓI, cuáles no salen nunca del dispositivo, qué hace JOPOBOT con sus preguntas y cuáles son sus derechos.">
+  <meta name="theme-color" content="#004d00">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="img/icono-192.png" type="image/png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="JOPÓI">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/jopoi.css">
+  <script src="js/config.js"></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido principal</a>
+
+  <div id="barra-accesibilidad"></div>
+
+  <header class="sitio">
+    <a class="marca" href="index.html"><img src="img/logo.png" alt="" class="logo-marca"><span>JOPÓI</span></a>
+    <p class="lema">Intercambio recíproco: la democracia se adapta a usted, no al revés.</p>
+    <nav class="principal" aria-label="Navegación principal">
+      <ul>
+        <li><a href="tutorial.html">Cómo usar JOPÓI</a></li>
+        <li><a href="escuela.html">Escuela Cívica</a></li>
+        <li><a href="index.html">Leyes y proyectos</a></li>
+        <li><a href="jopobot.html">JOPOBOT, su asistente</a></li>
+        <li><a href="ocr.html">Digitalizar un documento</a></li>
+        <li><a href="convertir.html">Convertir a braille</a></li>
+        <li><a href="propuestas.html">Escribir mi propuesta</a></li>
+        <li><a href="ajustes.html">Accesibilidad</a></li>
+        <li><a href="acerca.html">Qué es JOPÓI</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <h1>Privacidad y protección de datos</h1>
+    <p>La regla de diseño de JOPÓI es simple: <strong>lo que usted lee, escanea o escribe se queda en su dispositivo</strong>. No hay cuentas, no hay rastreo, no hay base de datos de usuarios. Esta página explica módulo por módulo qué ocurre con sus datos, y señala con claridad la única excepción.</p>
+
+    <h2>Lo que nunca sale de su dispositivo</h2>
+    <table class="tabla-simple">
+      <caption>Tratamiento de datos por módulo</caption>
+      <thead><tr><th scope="col">Módulo</th><th scope="col">Qué datos usa</th><th scope="col">Dónde se procesan</th><th scope="col">Qué se guarda</th></tr></thead>
+      <tbody>
+        <tr><td>Digitalizar un documento (reconocimiento de texto)</td><td>La imagen o el PDF que usted elige</td><td>Dentro de su dispositivo. El archivo no se envía a ningún servidor</td><td>Nada, salvo que usted descargue el resultado</td></tr>
+        <tr><td>Convertir a braille</td><td>El texto que usted pega o el documento que elige</td><td>Dentro de su dispositivo</td><td>Nada, salvo el archivo .BRF que usted descarga</td></tr>
+        <tr><td>Leer en voz alta y dictar</td><td>El texto en pantalla; su voz al dictar</td><td>Con las funciones de voz de su propio navegador. Algunos navegadores envían el audio del dictado a su proveedor (por ejemplo, Google en Chrome); eso depende del navegador, no de JOPÓI</td><td>Nada</td></tr>
+        <tr><td>Lectura Fácil y pictogramas</td><td>El texto a simplificar</td><td>Dentro de su dispositivo. Los pictogramas se descargan de ARASAAC y se guardan en caché</td><td>Los pictogramas, para uso sin conexión</td></tr>
+        <tr><td>Escribir mi propuesta</td><td>Lo que usted escribe en el formulario</td><td>Dentro de su dispositivo. El envío lo hace usted, desde su propio correo o WhatsApp</td><td>El borrador, en el almacenamiento local de su navegador, para que no se pierda</td></tr>
+        <tr><td>Escuela Cívica</td><td>Su avance en los cursos</td><td>Dentro de su dispositivo</td><td>El avance y las insignias, solo en su navegador</td></tr>
+        <tr><td>Accesibilidad (perfil sensorial)</td><td>Sus preferencias de letra, contraste y voz</td><td>Dentro de su dispositivo</td><td>Las preferencias, solo en su navegador</td></tr>
+      </tbody>
+    </table>
+    <p>La plataforma no usa cookies de seguimiento ni herramientas de analítica de terceros. Las cifras de uso que publicamos en <a href="impacto.html">Impacto</a> se contaron en la fase beta a partir de registros locales agregados, sin identificar a nadie.</p>
+
+    <h2>La excepción: JOPOBOT</h2>
+    <p>JOPOBOT es el asistente por voz que explica el proceso legislativo. Es el <strong>único módulo que usa internet y un servicio externo</strong>, y por eso es opcional y está separado del resto.</p>
+    <ul>
+      <li><strong>Qué se envía:</strong> el texto de su pregunta y las últimas preguntas y respuestas de la conversación, para que el asistente tenga contexto.</li>
+      <li><strong>A dónde:</strong> a una función segura operada por JOPÓI, que reenvía la pregunta a un proveedor de inteligencia artificial (Google Gemini; como respaldo, Groq). La clave de acceso vive en esa función, nunca en su dispositivo.</li>
+      <li><strong>Qué no se envía:</strong> su nombre, su correo, su ubicación ni los documentos que usted escaneó. JOPÓI no le pide identificarse para usar JOPOBOT.</li>
+      <li><strong>Qué se guarda:</strong> en su dispositivo, un identificador anónimo de invitado y el historial reciente, que usted puede borrar con el botón de borrar conversación. JOPÓI no conserva las conversaciones en sus servidores.</li>
+      <li><strong>Lo que debe saber:</strong> el proveedor de inteligencia artificial procesa la pregunta según sus propias condiciones. No escriba datos personales sensibles en JOPOBOT. Para leer una ley, convertirla o escribir una propuesta no necesita JOPOBOT.</li>
+    </ul>
+
+    <h2>Sus derechos</h2>
+    <p>Como no guardamos sus datos, no tenemos nada que entregar, corregir ni borrar en nuestros servidores: todo está en su dispositivo y usted lo controla. Si cree que esta política no se cumple, escríbanos y responderemos. Esta plataforma se apoya en la Ley 223 (Ley General para Personas con Discapacidad), en la Ley 341 (Participación y Control Social) y en los artículos 9, 21 y 29 de la Convención sobre los Derechos de las Personas con Discapacidad.</p>
+
+    <h2>Para instituciones que adoptan JOPÓI</h2>
+    <p>Cuando una institución conecta su sistema documental con JOPÓI, los documentos tratados son públicos por definición y la institución sigue siendo su responsable. JOPÓI no recibe datos personales de la ciudadanía en ese proceso. Las organizaciones que replican JOPÓI en otro país deben revisar esta política frente a su propia ley de protección de datos; el diseño local primero facilita ese cumplimiento.</p>
+
+    <p class="aviso-origen">Responsable: Asociación Juvenil Bookcubers, Santa Cruz de la Sierra, Bolivia. Última revisión: 2 de noviembre de 2026.</p>
+  </main>
+
+  <footer class="sitio">
+    <p><strong>JOPÓI</strong> es software libre y de código abierto.</p>
+    <nav class="transparencia" aria-label="Transparencia"><ul><li><a href="como-funciona.html">Cómo funciona</a></li><li><a href="impacto.html">Impacto</a></li><li><a href="licencia.html">Licencia y marca</a></li><li><a href="privacidad.html">Privacidad</a></li><li><a href="replicar.html">Replicar JOPÓI</a></li><li><a href="partners.html" lang="en">For partners (English)</a></li></ul></nav>
+    <p>Atajos de teclado: Alt más 1, leyes. Alt más 2, digitalizar. Alt más 3, propuestas. Alt más 4, accesibilidad. Alt más 0, leer la página en voz alta.</p>
+  </footer>
+
+  <script src="js/middleware.js"></script>
+  <script src="js/braille.js"></script>
+  <script src="js/lectura-facil.js"></script>
+  <script src="js/tts.js"></script>
+  <script src="js/stt.js"></script>
+  <script src="js/pictogramas.js"></script>
+  <script src="js/a11y.js"></script>
+  <script src="js/instalar.js"></script>
+</body>
+</html>

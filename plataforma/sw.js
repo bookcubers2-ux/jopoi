@@ -9,10 +9,11 @@
  */
 'use strict';
 
-var VERSION = 'jopoi-v9';
+var VERSION = 'jopoi-v10';
 var PRECARGA = [
   'index.html', 'tutorial.html', 'escuela.html', 'jopobot.html', 'documento.html', 'ocr.html', 'convertir.html', 'propuestas.html',
-  'ajustes.html', 'acerca.html',
+  'ajustes.html', 'acerca.html', 'declaracion.html',
+  'como-funciona.html', 'impacto.html', 'licencia.html', 'privacidad.html', 'replicar.html', 'partners.html',
   'css/jopoi.css',
   'js/config.js', 'js/middleware.js', 'js/braille.js', 'js/lectura-facil.js',
   'js/tts.js', 'js/stt.js', 'js/pictogramas.js', 'js/a11y.js', 'js/instalar.js',
